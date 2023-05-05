@@ -1,0 +1,67 @@
+#follow {
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    visibility: hidden;
+    background-image: url('../imgs/master.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.follow {
+
+    &-x {
+        color: white;
+        position: absolute;
+        font-size: 3rem;
+        top: 2rem;
+        right: 3rem;
+
+        &-link {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    &-cont {
+        text-align: center;
+        margin: auto;
+    }
+
+    &-error {
+        visibility: hidden;
+    }
+
+    &-form {
+        font-size: 2rem !important;
+    }
+
+    &-marbo {
+        margin-bottom: 3rem;
+    }
+
+    &-btn {
+        border: 1px solid white;
+        border-radius: 3rem;
+        margin: 1rem;
+        font-size: 2.5rem;
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+}

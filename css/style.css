@@ -1,0 +1,133 @@
+html {
+  font-size: 62.5%; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body,
+*:hover {
+  box-sizing: border-box;
+  cursor: url("../imgs/red-cursor.png"), auto; }
+
+@keyframes flicker {
+  0% {
+    opacity: 100%; }
+  10% {
+    opacity: 0; }
+  20% {
+    opacity: 100%; }
+  30% {
+    opacity: 0; }
+  40% {
+    opacity: 100%; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
+
+@keyframes flicker-cont {
+  1% {
+    opacity: 100%; }
+  2% {
+    opacity: 0; }
+  3% {
+    opacity: 100%; }
+  4% {
+    opacity: 0; }
+  5% {
+    opacity: 100%; }
+  6% {
+    opacity: 0; }
+  14% {
+    opacity: 100%; } }
+
+@font-face {
+  font-family: mainFont;
+  src: url(../fonts/StudioGrotesk-Light.otf); }
+
+body {
+  font-family: mainFont; }
+
+#follow {
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  background-image: url("../imgs/master.png");
+  background-position: center;
+  background-size: cover; }
+
+.follow-x {
+  color: white;
+  position: absolute;
+  font-size: 3rem;
+  top: 2rem;
+  right: 3rem; }
+  .follow-x-link {
+    text-decoration: none;
+    color: white; }
+
+.follow-cont {
+  text-align: center;
+  margin: auto; }
+
+.follow-error {
+  visibility: hidden; }
+
+.follow-form {
+  font-size: 2rem !important; }
+
+.follow-marbo {
+  margin-bottom: 3rem; }
+
+.follow-btn {
+  border: 1px solid white;
+  border-radius: 3rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: white; }
+  .follow-btn:hover {
+    color: white; }
+
+.follow-link {
+  text-decoration: none;
+  color: white; }
+  .follow-link:hover {
+    color: white; }
+
+#home {
+  height: 100vh;
+  width: 100vw;
+  background-color: black; }
+
+.home-link {
+  position: absolute;
+  top: 3rem;
+  right: 3rem; }
+  .home-link-text {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #ea0404; }
+    .home-link-text:hover {
+      color: inherit;
+      cursor: url(); }
+
+.ghost {
+  height: 100%;
+  width: 100%; }
+
+.ghost-img {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* animation: flicker-cont 5s step-end 1s infinite; */
+  animation: flicker 1s step-end; }

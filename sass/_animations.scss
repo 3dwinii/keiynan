@@ -1,0 +1,47 @@
+@keyframes flicker {
+    0% {
+        opacity: 100%;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 100%;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes flicker-cont {
+    1% {
+        opacity: 100%;
+    }
+    2% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 100%;
+    }
+    4% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 100%;
+    }
+    6% {
+        opacity: 0;
+    }
+    14% {
+        opacity: 100%;
+    }
+}
