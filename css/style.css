@@ -56,52 +56,58 @@ body {
   z-index: 2;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
-  display: flex;
-  visibility: hidden;
+  display: flex; }
+
+.follow-img {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
   background-image: url("../imgs/master.png");
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
   background-position: center;
   background-size: cover; }
 
-.follow-x {
-  color: white;
+.follow-text {
+  z-index: 1;
   position: absolute;
-  font-size: 3rem;
-  top: 2rem;
-  right: 3rem; }
-  .follow-x-link {
+  height: 100%;
+  width: 100%;
+  padding-top: 20%; }
+  .follow-text-x {
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    top: 2rem;
+    right: 3rem; }
+    .follow-text-x-link {
+      text-decoration: none;
+      color: white; }
+  .follow-text-cont {
+    text-align: center;
+    margin: auto; }
+  .follow-text-error {
+    visibility: hidden; }
+  .follow-text-form {
+    font-size: 2rem !important; }
+  .follow-text-marbo {
+    margin-bottom: 3rem; }
+  .follow-text-btn {
+    border: 1px solid white;
+    border-radius: 3rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+    color: white; }
+    .follow-text-btn:hover {
+      color: white; }
+  .follow-text-link {
     text-decoration: none;
     color: white; }
-
-.follow-cont {
-  text-align: center;
-  margin: auto; }
-
-.follow-error {
-  visibility: hidden; }
-
-.follow-form {
-  font-size: 2rem !important; }
-
-.follow-marbo {
-  margin-bottom: 3rem; }
-
-.follow-btn {
-  border: 1px solid white;
-  border-radius: 3rem;
-  margin: 1rem;
-  font-size: 2.5rem;
-  color: white; }
-  .follow-btn:hover {
-    color: white; }
-
-.follow-link {
-  text-decoration: none;
-  color: white; }
-  .follow-link:hover {
-    color: white; }
+    .follow-text-link:hover {
+      color: white; }
 
 #home {
   height: 100vh;
