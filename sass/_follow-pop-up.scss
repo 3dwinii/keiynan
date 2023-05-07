@@ -5,7 +5,8 @@
     position: relative;
     top: 0;
     left: 0;
-    display: flex;    
+    display: flex;
+    margin-top: 8px;
 }
 
 .follow {
@@ -15,8 +16,8 @@
         height: 100vh;
         width: 100vw;
         background-image: url('../imgs/master.png');
-        filter: blur(20px);
-        -webkit-filter: blur(20px);
+        filter: blur(10px);
+        -webkit-filter: blur(10px);
         background-position: center;
         background-size: cover;
     }

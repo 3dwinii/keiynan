@@ -24,7 +24,6 @@
 .ghost {
     height: 100%;
     width: 100%;
-    // background-color: black;
 }
 
 .ghost-img {
@@ -32,6 +31,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    /* animation: flicker-cont 5s step-end 1s infinite; */
-    animation: flicker 1s step-end;
+    animation: flicker-cont 3s step-end 1s infinite;
+    // animation: flicker 1s step-end infinite;
 }

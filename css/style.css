@@ -1,5 +1,6 @@
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 *,
 *::before,
@@ -32,17 +33,17 @@ body,
 @keyframes flicker-cont {
   1% {
     opacity: 100%; }
-  2% {
-    opacity: 0; }
-  3% {
-    opacity: 100%; }
   4% {
     opacity: 0; }
-  5% {
-    opacity: 100%; }
   6% {
+    opacity: 100%; }
+  8% {
     opacity: 0; }
-  14% {
+  10% {
+    opacity: 100%; }
+  12% {
+    opacity: 0; }
+  24% {
     opacity: 100%; } }
 
 @font-face {
@@ -59,15 +60,16 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  display: flex; }
+  display: flex;
+  margin-top: 8px; }
 
 .follow-img {
   position: absolute;
   height: 100vh;
   width: 100vw;
   background-image: url("../imgs/master.png");
-  filter: blur(20px);
-  -webkit-filter: blur(20px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
   background-position: center;
   background-size: cover; }
 
@@ -135,5 +137,4 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* animation: flicker-cont 5s step-end 1s infinite; */
-  animation: flicker 1s step-end; }
+  animation: flicker-cont 3s step-end 1s infinite; }
