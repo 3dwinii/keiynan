@@ -119,7 +119,8 @@ body {
 .home-link {
   position: absolute;
   top: 3rem;
-  right: 3rem; }
+  right: 3rem;
+  z-index: 2; }
   .home-link-text {
     text-decoration: none;
     font-size: 3rem;
