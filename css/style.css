@@ -133,6 +133,7 @@ body {
   width: 100%; }
 
 .ghost-img {
+  width: 100%;
   transform: translateY(-50%) translateX(-50%);
   position: absolute;
   top: 50%;
