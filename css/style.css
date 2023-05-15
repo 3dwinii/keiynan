@@ -116,6 +116,9 @@ body {
   width: 100vw;
   background-color: black; }
 
+.video {
+  width: 100%; }
+
 .home-link {
   position: absolute;
   top: 3rem;
@@ -128,15 +131,3 @@ body {
     .home-link-text:hover {
       color: inherit;
       cursor: url(); }
-
-.ghost {
-  height: 100%;
-  width: 100%; }
-
-.ghost-img {
-  width: 100%;
-  transform: translateY(-50%) translateX(-50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  animation: flicker-cont 3s step-end 1s infinite; }
