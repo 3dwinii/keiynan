@@ -6,6 +6,10 @@
 
 .video {
     width: 100%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .home-link {
@@ -33,11 +37,7 @@
 // }
 
 // .ghost-img {
-//     width: 100%;
-//     transform: translateY(-50%) translateX(-50%);
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
+//     
 //     animation: flicker-cont 3s step-end 1s infinite;
 //     // animation: flicker 1s step-end infinite;
 // }

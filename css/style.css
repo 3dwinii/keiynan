@@ -117,7 +117,11 @@ body {
   background-color: black; }
 
 .video {
-  width: 100%; }
+  width: 100%;
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%; }
 
 .home-link {
   position: absolute;
