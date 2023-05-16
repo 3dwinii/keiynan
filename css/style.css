@@ -96,7 +96,8 @@ body {
   .follow-text-form {
     font-size: 2rem !important; }
   .follow-text-marbo {
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    visibility: hidden; }
   .follow-text-btn {
     border: 1px solid white;
     border-radius: 3rem;
