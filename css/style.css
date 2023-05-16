@@ -131,8 +131,12 @@ body {
   z-index: 2; }
   .home-link-text {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #ea0404; }
     .home-link-text:hover {
       color: inherit;
       cursor: url(); }
+
+@media (max-width: 767px) {
+  .home-link-text {
+    font-size: 2rem; } }
