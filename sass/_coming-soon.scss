@@ -32,11 +32,6 @@ body {
 
 @media (max-width: 767px) {
     .coming-soon-container {
-        top: 50%;
-    }
-
-    .coming-soon-text {
-        font-size: 4rem;
-        top: 30%;
+        visibility: hidden;
     }
 }
