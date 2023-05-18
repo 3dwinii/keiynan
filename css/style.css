@@ -61,7 +61,8 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  margin-top: 8px; }
+  margin-top: 8px;
+  visibility: hidden; }
 
 .follow-img {
   position: absolute;
@@ -115,7 +116,8 @@ body {
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: black; }
+  background-color: black;
+  visibility: hidden; }
 
 .video {
   width: 100%;
@@ -140,3 +142,32 @@ body {
 @media (max-width: 767px) {
   .home-link-text {
     font-size: 2rem; } }
+
+body {
+  background-color: black; }
+
+.coming-soon {
+  height: 100%;
+  width: 100%;
+  background-color: black; }
+  .coming-soon-bg {
+    background-color: black;
+    height: 100%;
+    width: 100%; }
+  .coming-soon-text {
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 5rem;
+    animation: flicker-cont 3s infinite; }
+  .coming-soon-container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%); }
+
+@media (max-width: 767px) {
+  .coming-soon-container {
+    top: 80%; } }
