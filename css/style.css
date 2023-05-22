@@ -74,21 +74,15 @@ body {
   background-position: center;
   background-size: cover; }
 
+.follow-response {
+  color: red !important; }
+
 .follow-text {
   z-index: 1;
   position: absolute;
   height: 100%;
   width: 100%;
   padding-top: 20%; }
-  .follow-text-x {
-    color: white;
-    position: absolute;
-    font-size: 3rem;
-    top: 2rem;
-    right: 3rem; }
-    .follow-text-x-link {
-      text-decoration: none;
-      color: white; }
   .follow-text-cont {
     text-align: center;
     margin: auto; }
@@ -97,14 +91,17 @@ body {
   .follow-text-form {
     font-size: 2rem !important; }
   .follow-text-marbo {
-    margin-bottom: 3rem;
-    visibility: hidden; }
+    margin-bottom: 3rem; }
+  .follow-text-form {
+    visibility: visible; }
   .follow-text-btn {
     border: 1px solid white;
     border-radius: 3rem;
     margin: 1rem;
     font-size: 2.5rem;
-    color: white; }
+    color: white;
+    display: inline !important;
+    margin: 1rem !important; }
     .follow-text-btn:hover {
       color: white; }
   .follow-text-link {

@@ -23,6 +23,10 @@
         background-size: cover;
     }
 
+    &-response {
+        color: red !important;
+    }
+
     &-text {
 
         z-index: 1;
@@ -33,18 +37,6 @@
         // top: 50%;
         // left: 50%;
         // transform: translateX(-50%) translateY(-50%);
-        &-x {
-            color: white;
-            position: absolute;
-            font-size: 3rem;
-            top: 2rem;
-            right: 3rem;
-    
-            &-link {
-                text-decoration: none;
-                color: white;
-            }
-        }
     
         &-cont {
             text-align: center;
@@ -61,7 +53,10 @@
     
         &-marbo {
             margin-bottom: 3rem;
-            visibility: hidden;
+        }
+
+        &-form {
+            visibility: visible;
         }
     
         &-btn {
@@ -70,6 +65,8 @@
             margin: 1rem;
             font-size: 2.5rem;
             color: white;
+            display: inline !important;
+            margin: 1rem !important;
     
             &:hover {
                 color: white;
