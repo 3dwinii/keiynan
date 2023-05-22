@@ -1,19 +1,3 @@
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-body,
-*:hover {
-  box-sizing: border-box;
-  cursor: url("../imgs/red-cursor.png"), auto; }
-
 @keyframes flicker {
   0% {
     opacity: 100%; }
@@ -46,6 +30,22 @@ body,
   24% {
     opacity: 100%; } }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body,
+*:hover {
+  box-sizing: border-box;
+  cursor: url("../imgs/red-cursor.png"), auto; }
+
 @font-face {
   font-family: mainFont;
   src: url(../fonts/StudioGrotesk-Light.otf); }
@@ -61,8 +61,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  margin-top: 8px;
-  visibility: hidden; }
+  margin-top: 8px; }
 
 .follow-img {
   position: absolute;
@@ -103,7 +102,7 @@ body {
     display: inline !important;
     margin: 1rem !important; }
     .follow-text-btn:hover {
-      color: white; }
+      border: none; }
   .follow-text-link {
     text-decoration: none;
     color: white; }
@@ -113,13 +112,12 @@ body {
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: black;
-  visibility: hidden; }
+  background-color: black; }
 
-.video {
+.home-video {
+  position: absolute;
   width: 100%;
   transform: translateY(-50%) translateX(-50%);
-  position: absolute;
   top: 50%;
   left: 50%; }
 
@@ -136,6 +134,33 @@ body {
       color: inherit;
       cursor: url(); }
 
+.home-shop {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ea0404; }
+  .home-shop-btn {
+    border: 1px solid #ea0404;
+    border-radius: 3rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+    color: #ea0404;
+    display: inline !important;
+    margin: 1rem !important; }
+    .home-shop-btn:hover {
+      border: none; }
+    .home-shop-btn:hover {
+      border: 1px solid white;
+      border-radius: 3rem;
+      margin: 1rem;
+      font-size: 2.5rem;
+      color: white;
+      display: inline !important;
+      margin: 1rem !important; }
+      .home-shop-btn:hover:hover {
+        border: none; }
+
 @media (max-width: 767px) {
   .home-link-text {
     font-size: 2rem; } }
@@ -146,7 +171,8 @@ body {
 .coming-soon {
   height: 100%;
   width: 100%;
-  background-color: black; }
+  background-color: black;
+  visibility: hidden; }
   .coming-soon-bg {
     background-color: black;
     height: 100%;
@@ -168,3 +194,11 @@ body {
 @media (max-width: 767px) {
   .coming-soon-container {
     visibility: hidden; } }
+
+#shop {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

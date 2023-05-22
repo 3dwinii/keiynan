@@ -1,0 +1,56 @@
+#home {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    // visibility: hidden;
+}
+
+.home {
+    &-video {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    }
+
+    &-link {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 2;
+
+        &-text {
+            text-decoration: none;
+            font-size: 3rem;
+            color: $color-red;
+
+            &:hover {
+                color: inherit;
+                cursor: url();
+            }
+        }
+    }
+
+    &-shop {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-red;
+
+        &-btn {
+            @include btnStyleRed;
+
+            &:hover {
+                @include btnStyleWhite;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .home-link-text {
+        font-size: 2rem;
+    }
+}

@@ -7,7 +7,7 @@
     left: 0;
     display: flex;
     margin-top: 8px;
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 .follow {
@@ -60,17 +60,7 @@
         }
     
         &-btn {
-            border: 1px solid white;
-            border-radius: 3rem;
-            margin: 1rem;
-            font-size: 2.5rem;
-            color: white;
-            display: inline !important;
-            margin: 1rem !important;
-    
-            &:hover {
-                color: white;
-            }
+            @include btnStyleWhite;
         }
     
         &-link {

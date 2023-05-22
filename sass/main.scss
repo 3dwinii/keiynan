@@ -1,7 +1,11 @@
-@import 'variables';
+@import 'abstract/variables';
+@import 'abstract/mixins';
+@import 'abstract/animations';
+
 @import 'base';
-@import 'animations';
 @import 'typography';
-@import 'follow-pop-up';
-@import 'home';
-@import 'coming-soon';
+
+@import 'sections/follow-pop-up';
+@import 'sections/home';
+@import 'sections/coming-soon';
+@import 'sections/shop';
