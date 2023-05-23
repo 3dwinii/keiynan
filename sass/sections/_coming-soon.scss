@@ -8,11 +8,11 @@ body {
     background-color: black;
     // visibility: hidden;
 
-    &-bg {
-        background-color: black;
-        height: 100%;
-        width: 100%;
-    }
+    // &-bg {
+    //     background-color: black;
+    //     height: 100%;
+    //     width: 100%;
+    // }
 
     &-text {
         color: red;
@@ -34,7 +34,7 @@ body {
 
 @media (max-width: 767px) {
     .coming-soon-container {
-        visibility: hidden;
+        display: none;
     }
     .coming-soon-text {
         font-size: $fosi-body;

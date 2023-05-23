@@ -174,10 +174,6 @@ body {
   height: 100%;
   width: 100%;
   background-color: black; }
-  .coming-soon-bg {
-    background-color: black;
-    height: 100%;
-    width: 100%; }
   .coming-soon-text {
     color: red;
     position: absolute;
@@ -194,7 +190,7 @@ body {
 
 @media (max-width: 767px) {
   .coming-soon-container {
-    visibility: hidden; }
+    display: none; }
   .coming-soon-text {
     font-size: 2.5rem; } }
 
