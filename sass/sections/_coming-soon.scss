@@ -6,7 +6,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
-    visibility: hidden;
+    // visibility: hidden;
+
     &-bg {
         background-color: black;
         height: 100%;
@@ -34,5 +35,8 @@ body {
 @media (max-width: 767px) {
     .coming-soon-container {
         visibility: hidden;
+    }
+    .coming-soon-text {
+        font-size: $fosi-body;
     }
 }

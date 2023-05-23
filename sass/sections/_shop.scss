@@ -1,8 +1,29 @@
 #shop {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    visibility: hidden;
 }
+
+.shop {
+    &-container {
+        height: 100vh;
+        width: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-textdiv {
+        // height: 30%;
+        // width: 20%;
+        color: $color-red;
+        font-size: $fosi-body;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+    }
+
+    &-text {
+        margin: auto;
+    }
+}
+

@@ -61,7 +61,8 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  margin-top: 8px; }
+  margin-top: 8px;
+  visibility: hidden; }
 
 .follow-img {
   position: absolute;
@@ -112,7 +113,8 @@ body {
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: black; }
+  background-color: black;
+  visibility: hidden; }
 
 .home-video {
   position: absolute;
@@ -171,8 +173,7 @@ body {
 .coming-soon {
   height: 100%;
   width: 100%;
-  background-color: black;
-  visibility: hidden; }
+  background-color: black; }
   .coming-soon-bg {
     background-color: black;
     height: 100%;
@@ -193,12 +194,27 @@ body {
 
 @media (max-width: 767px) {
   .coming-soon-container {
-    visibility: hidden; } }
+    visibility: hidden; }
+  .coming-soon-text {
+    font-size: 2.5rem; } }
 
 #shop {
+  visibility: hidden; }
+
+.shop-container {
   height: 100vh;
-  width: 100vw;
+  width: 100vh;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.shop-textdiv {
+  color: #ea0404;
+  font-size: 2.5rem;
+  text-align: justify;
+  display: flex;
+  align-items: center; }
+
+.shop-text {
+  margin: auto; }
