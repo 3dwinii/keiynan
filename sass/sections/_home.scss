@@ -40,10 +40,12 @@
         color: $color-red;
 
         &-btn {
-            @include btnStyleRed;
+            @include btnStyle;
+            color: $color-red;
 
             &:hover {
-                @include btnStyleWhite;
+                @include btnStyle;
+                color: white;
             }
         }
     }

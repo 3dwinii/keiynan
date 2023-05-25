@@ -91,24 +91,40 @@ body {
   .follow-text-form {
     font-size: 2rem !important; }
   .follow-text-marbo {
-    margin-bottom: 3rem; }
+    margin-bottom: 5rem; }
   .follow-text-form {
     visibility: visible; }
   .follow-text-btn {
-    border: 1px solid white;
+    border: 1px solid;
     border-radius: 3rem;
     margin: 1rem;
-    font-size: 2.5rem;
-    color: white;
     display: inline !important;
-    margin: 1rem !important; }
+    margin: 1rem !important;
+    color: white;
+    border-color: white;
+    font-size: 2.5rem; }
     .follow-text-btn:hover {
+      border: none; }
+  .follow-text-input {
+    border: 1px solid;
+    border-radius: 3rem;
+    margin: 1rem;
+    display: inline !important;
+    margin: 1rem !important;
+    color: black;
+    border-color: white;
+    font-size: 1.5rem; }
+    .follow-text-input:hover {
       border: none; }
   .follow-text-link {
     text-decoration: none;
     color: white; }
     .follow-text-link:hover {
       color: white; }
+
+@media (max-width: 767px) {
+  .follow-text-marbo {
+    margin-bottom: 2rem; } }
 
 #home {
   height: 100vh;
@@ -143,23 +159,21 @@ body {
   transform: translateX(-50%);
   color: #ea0404; }
   .home-shop-btn {
-    border: 1px solid #ea0404;
+    border: 1px solid;
     border-radius: 3rem;
     margin: 1rem;
-    font-size: 2.5rem;
-    color: #ea0404;
     display: inline !important;
-    margin: 1rem !important; }
+    margin: 1rem !important;
+    color: #ea0404; }
     .home-shop-btn:hover {
       border: none; }
     .home-shop-btn:hover {
-      border: 1px solid white;
+      border: 1px solid;
       border-radius: 3rem;
       margin: 1rem;
-      font-size: 2.5rem;
-      color: white;
       display: inline !important;
-      margin: 1rem !important; }
+      margin: 1rem !important;
+      color: white; }
       .home-shop-btn:hover:hover {
         border: none; }
 
