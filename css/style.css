@@ -59,7 +59,8 @@ body,
   top: 0;
   left: 0;
   display: flex;
-  margin-top: 8px; }
+  margin-top: 8px;
+  display: none; }
 
 .follow-img {
   position: absolute;
@@ -129,7 +130,8 @@ body,
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: black; }
+  background-color: black;
+  display: none; }
 
 .home-video {
   position: absolute;
@@ -189,8 +191,7 @@ body {
 .coming-soon {
   height: 100%;
   width: 100%;
-  background-color: black;
-  visibility: hidden; }
+  background-color: black; }
   .coming-soon-text {
     color: red;
     position: absolute;
@@ -201,15 +202,20 @@ body {
     animation: flicker-cont 3s infinite; }
   .coming-soon-container {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%); }
+  .coming-soon-marbo {
+    margin-bottom: 7rem; }
 
 @media (max-width: 767px) {
-  .coming-soon-container {
+  .follow-hide {
     display: none; }
   .coming-soon-text {
     font-size: 2.5rem; } }
+
+#shop {
+  display: none; }
 
 .shop-container {
   width: 100vw;

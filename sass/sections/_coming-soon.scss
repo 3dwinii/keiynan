@@ -6,7 +6,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
-    visibility: hidden;
+    // visibility: hidden;
 
     &-text {
         color: red;
@@ -20,14 +20,19 @@ body {
 
     &-container {
         position: absolute;
-        top: 90%;
+        top: 70%;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    &-marbo {
+        margin-bottom: 7rem;
     }
 }
 
 @media (max-width: 767px) {
-    .coming-soon-container {
+    .follow-hide {
+        // visibility: hidden;
         display: none;
     }
     .coming-soon-text {

@@ -7,7 +7,7 @@
     left: 0;
     display: flex;
     margin-top: 8px;
-    // visibility: hidden;
+    display: none;
 }
 
 .follow {
@@ -80,8 +80,6 @@
             }
         }
     }
-
-    
 }
 
 @media (max-width: 767px) {
