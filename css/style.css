@@ -59,8 +59,7 @@ body,
   top: 0;
   left: 0;
   display: flex;
-  margin-top: 8px;
-  display: none; }
+  margin-top: 8px; }
 
 .follow-img {
   position: absolute;
@@ -130,8 +129,7 @@ body,
 #home {
   height: 100vh;
   width: 100vw;
-  background-color: black;
-  display: none; }
+  background-color: black; }
 
 .home-video {
   position: absolute;
@@ -191,7 +189,8 @@ body {
 .coming-soon {
   height: 100%;
   width: 100%;
-  background-color: black; }
+  background-color: black;
+  visibility: hidden; }
   .coming-soon-text {
     color: red;
     position: absolute;
@@ -213,9 +212,6 @@ body {
     display: none; }
   .coming-soon-text {
     font-size: 2.5rem; } }
-
-#shop {
-  display: none; }
 
 .shop-container {
   width: 100vw;
