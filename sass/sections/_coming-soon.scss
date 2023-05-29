@@ -6,7 +6,20 @@ body {
     height: 100%;
     width: 100%;
     background-color: black;
-    visibility: hidden;
+    visibility: visible;
+
+    &-password {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    &-password-submit {
+        @include btnStyle;
+        color: white;
+        border-color: white;
+        font-size: 1.5rem;
+    }
 
     &-text {
         color: red;
