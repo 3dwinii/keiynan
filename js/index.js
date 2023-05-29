@@ -52,7 +52,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let password = document.getElementById('password').value;
-    let correctPassword = 'rb';
+    let correctPassword = 'rainbowboy';
 
     if (password === correctPassword) {
         content.style.display = 'block';
