@@ -40,3 +40,24 @@ homeShopBtn.addEventListener('click', () => {
    
 
 // })
+
+
+//password access
+
+const form = document.getElementById('password-form');
+const content = document.getElementById('content');
+const comingSoon = document.getElementById('coming-soon');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let password = document.getElementById('password').value;
+    let correctPassword = 'rb';
+
+    if (password === correctPassword) {
+        content.style.display = 'block';
+        comingSoon.style.display = 'none';
+    } else {
+        alert('try again...')
+    }
+})

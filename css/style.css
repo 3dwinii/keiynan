@@ -126,7 +126,7 @@ body,
   .follow-text-btn-subscribe {
     font-size: 2rem; } }
 
-.content {
+#content {
   display: none; }
 
 #home {
@@ -192,8 +192,7 @@ body {
 .coming-soon {
   height: 100%;
   width: 100%;
-  background-color: black;
-  visibility: visible; }
+  background-color: black; }
   .coming-soon-password {
     position: absolute;
     top: 2rem;
