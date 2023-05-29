@@ -41,14 +41,21 @@ body {
     &-marbo {
         margin-bottom: 7rem;
     }
+
+    &-links {
+        margin-top: 5rem;
+    }
 }
 
 @media (max-width: 767px) {
-    .follow-hide {
-        // visibility: hidden;
+    .coming-soon-links {
         display: none;
     }
     .coming-soon-text {
         font-size: $fosi-body;
     }
+}
+
+.cs-inline {
+    display: inline;
 }
