@@ -225,7 +225,8 @@ body {
   .coming-soon-marbo {
     margin-bottom: 7rem; }
   .coming-soon-links {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    display: none; }
 
 @media (max-width: 767px) {
   .coming-soon-links {
