@@ -1,10 +1,9 @@
+//button functionality
+
 const followBtn = document.querySelector('.home-link');
 const homeShopBtn = document.querySelector('.home-shop-btn')
 const followSection = document.getElementById('follow');
 const shopSection = document.getElementById('shop')
-const body = document.querySelector('body')
-
-//button functionality
 
 followBtn.addEventListener('click', () => {
     followSection.scrollIntoView({behavior: 'smooth'})  
@@ -16,31 +15,35 @@ homeShopBtn.addEventListener('click', () => {
 
 //smooth scroll to focus on sections
 
+// let currentSection;
+// let scrollTimeout;
 
 // window.addEventListener('scroll', () => {
-//     let pageTop = window.scrollY;
-//     let sections = document.getElementsByClassName('section')
-//     let currentSection;
+//     clearTimeout(scrollTimeout);
 
-//     for(let i = 0; i < sections.length; i++) {
-//         let section = sections[i];
-//         let half = section.offsetHeight / 2;
-//         if (pageTop >= section.offsetTop - half && pageTop <= section.offsetTop + half) {
-//             currentSection = section;
+//     scrollTimeout = setTimeout(() => {
+//         let sections = document.getElementsByClassName('section')
+//         let scrollPos = window.scrollY;
+//         //check if inside sec 0 (greater than 0, smaller than 1)
+//         if (scrollPos >= sections[0].offsetTop && scrollPos < sections[1].offsetTop) {
+//             currentSection = sections[0];
+//         //check if inside 1 (greater than 1, smaller than 2)
+//         } else if (scrollPos >= sections[1].offsetTop && scrollPos < sections[2].offsetTop) {
+//             currentSection = sections[1];
+//         //check if inside 2 (greater than 2)
+//         } else if (scrollPos >= sections[2].offsetTop) {
+//             currentSection = sections[2];
+//         }
+
+//         if (currentSection) {
+//             currentSection.scrollIntoView({
+//                 behavior: 'smooth',
+//                 block: 'start'
+//             })
 //             console.log(currentSection)
 //         }
-//     }
-
-//     if (currentSection) {
-//         currentSection.scrollIntoView({
-//             behavior: 'smooth',
-//             block: 'start'
-//         })
-//     }
-   
-
+//     }, 100);
 // })
-
 
 //password access
 
@@ -52,7 +55,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let password = document.getElementById('password').value;
-    let correctPassword = 'rainbowboy';
+    let correctPassword = 'H0ld1ngbackwav3s';
 
     if (password === correctPassword) {
         content.style.display = 'block';

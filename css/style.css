@@ -45,7 +45,8 @@ body,
 *:hover {
   box-sizing: border-box;
   cursor: url("../imgs/red-cursor.png"), auto;
-  font-family: mainFont; }
+  font-family: mainFont;
+  scroll-behavior: smooth; }
 
 @font-face {
   font-family: mainFont;
