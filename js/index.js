@@ -1,25 +1,30 @@
 //password access
 
-const form = document.getElementById('password-form');
-const content = document.getElementById('content');
-const comingSoon = document.getElementById('coming-soon');
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('password-form');
+    const content = document.getElementById('content');
+    const comingSoon = document.getElementById('coming-soon');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    let password = document.getElementById('password').value;
-    let correctPassword = ' ';
+        let password = document.getElementById('password').value;
+        let correctPassword = ' ';
 
-    if (password === correctPassword) {
-        content.style.display = 'block';
-        comingSoon.style.display = 'none';
-    } else {
-        alert('try again...')
-    }
+        if (password === correctPassword) {
+            content.style.display = 'block';
+            comingSoon.style.display = 'none';
+        } else {
+            alert('try again...')
+        }
+    })
 })
 
 
+
+
 //button functionality
+
 
 // const followBtn = document.querySelector('.home-link');
 // const homeShopBtn = document.querySelector('.home-shop-btn')
@@ -34,7 +39,7 @@ form.addEventListener('submit', (e) => {
 //     shopSection.scrollIntoView({behavior: 'smooth'})
 // })
 
-//smooth scroll to focus on sections
+// smooth scroll to focus on sections
 
 // let currentSection;
 // let scrollTimeout;
@@ -65,4 +70,3 @@ form.addEventListener('submit', (e) => {
 //         }
 //     }, 100);
 // })
-

@@ -1,4 +1,36 @@
 @font-face {
-    font-family: mainFont;
-    src: url(../fonts/StudioGrotesk-Light.otf);
+    font-family: 'bodyFontLight';
+    src: url(../fonts/Inter-ExtraLight.ttf);
 }
+
+@font-face {
+    font-family: 'bodyFontMed';
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'headFont';
+    src: url(../fonts/PixeloidMono.ttf);
+}
+
+.text-orange {color: $color-orange;}
+.text-white {color: $color-white;}
+
+.text-caps {text-transform: uppercase;}
+
+.text-normal {font-size: $fosi-body;}
+.text-med {font-size: $fosi-head-med;}
+.text-large {font-size: $fosi-head-large;}
+
+.text-body-main {
+    font-size: $fosi-body;
+    color: $color-white;
+}
+
+.text-body-title {
+    font-family: bodyFontMed;
+    text-transform: uppercase;
+}
+
+.text-padding-sm {padding-top: .5rem;}
+.text-padding-lg {padding-top: 1.2rem;}

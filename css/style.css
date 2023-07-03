@@ -33,7 +33,14 @@
 body {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  height: 100vh; }
+  height: 100vh;
+  font-family: bodyFont; }
+
+p {
+  font-family: bodyFontLight; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: headFont; }
 
 *,
 *::before,
@@ -45,13 +52,51 @@ body {
 body,
 *:hover {
   box-sizing: border-box;
-  cursor: url("../imgs/red-cursor.png"), auto;
-  font-family: mainFont;
   scroll-behavior: smooth; }
 
 @font-face {
-  font-family: mainFont;
-  src: url(../fonts/StudioGrotesk-Light.otf); }
+  font-family: 'bodyFontLight';
+  src: url(../fonts/Inter-ExtraLight.ttf); }
+
+@font-face {
+  font-family: 'bodyFontMed';
+  src: url(../fonts/Inter-Regular.ttf); }
+
+@font-face {
+  font-family: 'headFont';
+  src: url(../fonts/PixeloidMono.ttf); }
+
+.text-orange {
+  color: #FC6935; }
+
+.text-white {
+  color: #fff; }
+
+.text-caps {
+  text-transform: uppercase; }
+
+.text-normal {
+  font-size: 0.8rem; }
+
+.text-med {
+  font-size: 5rem; }
+
+.text-large {
+  font-size: 6.5rem; }
+
+.text-body-main {
+  font-size: 0.8rem;
+  color: #fff; }
+
+.text-body-title {
+  font-family: bodyFontMed;
+  text-transform: uppercase; }
+
+.text-padding-sm {
+  padding-top: .5rem; }
+
+.text-padding-lg {
+  padding-top: 1.2rem; }
 
 #follow {
   z-index: 2;
@@ -210,7 +255,7 @@ body,
   .coming-soon-links {
     display: none; }
   .coming-soon-text {
-    font-size: 2.5rem; } }
+    font-size: 0.8rem; } }
 
 .cs-inline {
   display: inline; }
@@ -231,8 +276,8 @@ body,
 
 .shop-content {
   text-align: center;
-  font-size: 2.5rem;
-  color: #ea0404; }
+  font-size: 0.8rem;
+  color: #FF0000; }
 
 .shop-text {
   padding: 0 5%;
@@ -257,13 +302,36 @@ body,
 
 .carousel-inner {
   height: 50rem;
-  width: 80rem; }
+  width: 85rem; }
 
 .carousel-vinyl {
   height: inherit;
   background-image: url("/imgs/rainbow-boy-background.png");
   background-position: center;
   background-size: cover; }
-
-.buy-button {
-  z-index: 20; }
+  .carousel-vinyl-img {
+    height: 28rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+  .carousel-vinyl-text-right {
+    width: 15rem;
+    position: absolute;
+    right: 10rem;
+    top: 55%;
+    transform: translateY(-50%); }
+  .carousel-vinyl-lp01 {
+    position: absolute;
+    left: 15rem;
+    top: 8rem; }
+  .carousel-vinyl-rb {
+    position: absolute;
+    left: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; }
+  .carousel-vinyl-btn {
+    position: absolute;
+    left: 15rem;
+    bottom: 5rem; }

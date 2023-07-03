@@ -2,7 +2,15 @@ body {
     font-size: 62.5%;
     scroll-behavior: smooth;
     height: 100vh;
-    // overflow: hidden;
+    font-family: bodyFont;
+}
+
+p {
+    font-family: bodyFontLight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: headFont;
 }
 
 *,
@@ -16,7 +24,5 @@ body {
 body,
 *:hover {
     box-sizing: border-box;
-    cursor: url('../imgs/red-cursor.png'), auto;
-    font-family: mainFont;
     scroll-behavior: smooth;
 }

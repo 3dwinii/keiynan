@@ -11,19 +11,53 @@
 
     &-inner {
         height: 50rem;
-        width: 80rem;
+        width: 85rem;
     }
+}
 
     ///////////////////////// vinyl ///////////////////////////////////
 
+.carousel {
     &-vinyl {
         height: inherit;
         background-image: url('/imgs/rainbow-boy-background.png');
         background-position: center;
         background-size: cover;
-    }
-}
 
-.buy-button {
-    z-index: 20;
+        &-img {
+            height: 28rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        &-text-right {
+            width: 15rem;
+            position: absolute;
+            right: 10rem;
+            top: 55%;
+            transform: translateY(-50%);
+        }
+
+        &-lp01 {
+            position: absolute;
+            left: 15rem;
+            top: 8rem;
+        }
+
+        &-rb {
+            position: absolute;
+            left: 15rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        &-btn {
+            position: absolute;
+            left: 15rem;
+            bottom: 5rem;
+        }
+    }
 }
