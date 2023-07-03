@@ -12,14 +12,13 @@
     <title>keiynan</title>
 </head>
 <body>
-
     <section id="coming-soon">
         <form id="password-form" class="coming-soon-password">
             <input type="password" id="password" placeholder="password" class="follow-text-input">
             <button type="submit" class="button btn coming-soon-password-submit">enter</button>
         </form>
             <h1 class="coming-soon-text">coming soon</h1>
-            <div class="coming-soon-container container follow-text-cont">
+            <!-- <div class="coming-soon-container container follow-text-cont">
                 <div class="row">
                     <div class="col-12">
                         <form action="https://keiynan.us12.list-manage.com/subscribe/post?u=9e4a6fae3a54397ea44a61e48&amp;id=553d03cb9e&amp;f_id=003642e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -64,21 +63,224 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
     </section>
+    <section id="content">
 
-    <div id="content">
         <section id="home" class="section">
+
             <video autoplay muted playsinline loop class="home-video" width="500">
-                <source src="HOLLOW Keiynan.mp4" type="video/mp4">
+                <source src="https://d29xd2y6qg0pu.cloudfront.net/KEIYNAN+LANDING.mp4" type="video/mp4">
             </video>
+            <!-- the video is stored on aws cdn! it's in an s3 bucket, which you then make a 'distribution' for on aws Cloudfront, **make sure all the access permissions are set to public read access** and then you link it in the html. so cool cdn wow. -->
             <div class="home-link">
-                <p class="home-link-text" href="#">[ hi ]</p>
+                <p class="home-link-text" href="#">[ENTER]</p>
             </div>
-            <div class="home-shop">
-                <button class="btn home-shop-btn"> SHOP VINYL </button>
-            </div>
+
+        </section>
+
+        <section class="carousel-section" id="carousel">
+            <!-- <div class="carousel-head">
+                <h3>MUSIC</h3>
+                <H3>HOME</H3>
+                <H3>CART</H3>
+            </div> -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active carousel-vinyl">
+                    <!-- <p>heyyyy some text content</p>
+                    <img src="imgs/garden-asset.png" alt="Rainbow Boy Vinyl Cover">
+                    <p>
+                        <span>LP01
+                            ANNIVERSARY EDITION
+                        </span>
+                        <span>RAINBOW BOY</span>
+                    </p>
+                    <p>
+                        <span>Produced and composed by Tyler J Minford</span>
+                        <span>Executive produced, performed and written by Keiynan Lonsdale</span>
+                        <span>To all the dreamers, who at some stage in their lives have been been afraid to express the fullness of their light...</span>
+                    </p> -->
+                    <div id='product-component-1688348570970'></div>
+                    <script type="text/javascript">
+                    /*<![CDATA[*/
+                    (function () {
+                      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                      if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                          ShopifyBuyInit();
+                        } else {
+                          loadScript();
+                        }
+                      } else {
+                        loadScript();
+                      }
+                      function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                      }
+                      function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                          domain: 'f5f197-2.myshopify.com',
+                          storefrontAccessToken: 'd795cd7842a6f2b4bb5c704109127f47',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                          ui.createComponent('product', {
+                            id: '8396742361403',
+                            node: document.getElementById('product-component-1688348570970'),
+                            moneyFormat: '%24%7B%7Bamount%7D%7D',
+                            options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            ":hover": {
+                              "background-color": "#e60000"
+                            },
+                            "background-color": "#ff0000",
+                            ":focus": {
+                              "background-color": "#e60000"
+                            },
+                            "border-radius": "0px",
+                            "padding-left": "100px",
+                            "padding-right": "100px"
+                          },
+                          "description": {
+                            "font-size": "16px",
+                            "color": "#ff0000"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            ":hover": {
+                              "background-color": "#e60000"
+                            },
+                            "background-color": "#ff0000",
+                            ":focus": {
+                              "background-color": "#e60000"
+                            },
+                            "border-radius": "0px",
+                            "padding-left": "100px",
+                            "padding-right": "100px"
+                          },
+                          "description": {
+                            "font-family": "Helvetica Neue, sans-serif",
+                            "font-weight": "normal",
+                            "font-size": "14px",
+                            "color": "#4c4c4c"
+                          }
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "option": {},
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            ":hover": {
+                              "background-color": "#e60000"
+                            },
+                            "background-color": "#ff0000",
+                            ":focus": {
+                              "background-color": "#e60000"
+                            },
+                            "border-radius": "0px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "popup": false
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "background-color": "#ff0000",
+                            ":hover": {
+                              "background-color": "#e60000"
+                            },
+                            ":focus": {
+                              "background-color": "#e60000"
+                            }
+                          }
+                        }
+                      }
+                    },
+                          });
+                        });
+                      }
+                    })();
+                    /*]]>*/
+                    </script>
+                  </div>
+
+                  <div class="carousel-item carousel-mixtape">
+                    <img class="d-block w-100" src="imgs/Master.jpeg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item carousel-musiclinks">
+                    <img class="d-block w-100" src="imgs/Master.jpeg" alt="Third slide">
+                  </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </section>
 
         <section id="follow" class="section">
@@ -134,17 +336,7 @@
 
         </section>
 
-        <section id="shop" class="shop-container container section">
-            <div class="row shop-row">
-                <div class="shop-content shop-text col-md-6">
-                    Dive into the world of Rainbow Boy with our special vinyl edition. To celebrate its 3rd anniversary, we're offering you a chance to experience this amazing album in an entirely new way. Each vinyl includes a bonus poster. <br>PRE-ORDER. SHIPPING IN AUGUST.
-                </div>
-                <div class="shop-content shop-product col-md-6">
-                    <div id='product-component-1685254761257'></div>
-                </div>
-            </div>
-        </section>
-    </div>
+      </section>
 
     <script src="js/index.js"></script>
     <script src="js/shopify.js"></script>

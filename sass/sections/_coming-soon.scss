@@ -1,11 +1,12 @@
-body {
-    background-color: black;
+#coming-soon {
+    display: block;
 }
 
 .coming-soon {
     height: 100%;
     width: 100%;
     background-color: black;
+    display: none;
 
     &-password {
         position: absolute;

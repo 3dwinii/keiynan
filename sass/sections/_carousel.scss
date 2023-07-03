@@ -1,0 +1,29 @@
+.carousel {
+    &-section {
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        padding: 0 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-inner {
+        height: 50rem;
+        width: 80rem;
+    }
+
+    ///////////////////////// vinyl ///////////////////////////////////
+
+    &-vinyl {
+        height: inherit;
+        background-image: url('/imgs/rainbow-boy-background.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.buy-button {
+    z-index: 20;
+}
