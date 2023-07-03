@@ -130,7 +130,7 @@ body,
     font-size: 2rem; } }
 
 #content {
-  display: none; }
+  display: block; }
 
 #home {
   height: 100vh;
@@ -165,7 +165,7 @@ body,
     font-size: 2rem; } }
 
 #coming-soon {
-  display: block; }
+  display: none; }
 
 .coming-soon {
   height: 100%;
