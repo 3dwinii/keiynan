@@ -72,25 +72,29 @@ body,
 .text-white {
   color: #fff; }
 
+.text-red {
+  color: #FF0000; }
+
 .text-caps {
   text-transform: uppercase; }
 
-.text-normal {
+.text-size-normal {
   font-size: 0.8rem; }
 
-.text-med {
+.text-size-med {
   font-size: 5rem; }
 
-.text-large {
+.text-size-large {
   font-size: 6.5rem; }
 
-.text-body-main {
-  font-size: 0.8rem;
-  color: #fff; }
+.text-body-light {
+  font-family: 'bodyFontLight'; }
 
-.text-body-title {
-  font-family: bodyFontMed;
-  text-transform: uppercase; }
+.text-body-med {
+  font-family: 'bodyFontMed'; }
+
+.text-head {
+  font-family: "headFont"; }
 
 .text-padding-sm {
   padding-top: .5rem; }
@@ -175,12 +179,13 @@ body,
     font-size: 2rem; } }
 
 #content {
-  display: none; }
+  display: block; }
 
 #home {
   height: 100vh;
   width: 100vw;
-  display: block; }
+  display: block;
+  margin-bottom: .5rem; }
 
 .home-video {
   position: absolute;
@@ -210,7 +215,7 @@ body,
     font-size: 2rem; } }
 
 #coming-soon {
-  display: block; }
+  display: none; }
 
 .coming-soon {
   height: 100%;
@@ -291,6 +296,152 @@ body,
   .shop-product {
     padding: 0 15%; } }
 
+.document-center {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.home-video {
+  width: 100%;
+  height: 100vh;
+  background-color: black; }
+
+.carousel-container {
+  max-width: 980px;
+  width: 95%; }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  padding-top: calc(700 / 1200 * 100%);
+  overflow: hidden; }
+
+.carousel-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.left-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 147px;
+  cursor: pointer; }
+
+.left-arrow:hover {
+  background-color: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
+
+.right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 147px;
+  cursor: pointer; }
+
+.right-arrow:hover {
+  background-color: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
+
+.chevron {
+  width: 25px;
+  height: 25px;
+  border: solid red;
+  border-width: 10px 10px 0 0; }
+
+.chevron.right {
+  transform: rotate(45deg); }
+
+.chevron.left {
+  transform: rotate(-135deg); }
+
+.left-arrow:hover .chevron,
+.right-arrow:hover .chevron {
+  border-color: pink; }
+
+.circle-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px; }
+
+.circle {
+  border: 1px solid red;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer; }
+
+.circle-fill {
+  background-color: red; }
+
+.text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+  color: red;
+  text-align: center; }
+
+.text-container p:nth-child(1) {
+  margin: 10px 100px;
+  font-size: 1.5em; }
+
+.text-container p:nth-child(2) {
+  margin: 10px 100px 20px 100px; }
+
+.carousel-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@keyframes toRight {
+  0% {
+    left: 0; }
+  100% {
+    left: 100%; } }
+
+@keyframes toLeft {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+
+@keyframes comeRight {
+  0% {
+    left: 100%; }
+  100% {
+    left: 0; } }
+
+@keyframes comeLeft {
+  0% {
+    left: -100%; }
+  100% {
+    left: 0; } }
+
 .carousel-section {
   background-color: white;
   height: 100vh;
@@ -303,6 +454,9 @@ body,
 .carousel-inner {
   height: 50rem;
   width: 85rem; }
+
+.carousel-item {
+  position: relative; }
 
 .carousel-vinyl {
   height: inherit;
@@ -335,3 +489,23 @@ body,
     position: absolute;
     left: 15rem;
     bottom: 5rem; }
+
+.carousel-mixtape-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.carousel-musiclinks-test {
+  position: absolute;
+  top: 50px;
+  left: 200px; }
+
+.carousel-musiclinks-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.carousel-musiclinks-btn {
+  color: #FF0000; }

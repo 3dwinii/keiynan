@@ -13,24 +13,24 @@
     src: url(../fonts/PixeloidMono.ttf);
 }
 
+//colors
 .text-orange {color: $color-orange;}
 .text-white {color: $color-white;}
+.text-red {color: $color-red;}
 
+//deco
 .text-caps {text-transform: uppercase;}
 
-.text-normal {font-size: $fosi-body;}
-.text-med {font-size: $fosi-head-med;}
-.text-large {font-size: $fosi-head-large;}
+//font size
+.text-size-normal {font-size: $fosi-body;}
+.text-size-med {font-size: $fosi-head-med;}
+.text-size-large {font-size: $fosi-head-large;}
 
-.text-body-main {
-    font-size: $fosi-body;
-    color: $color-white;
-}
+//font family
+.text-body-light {font-family: 'bodyFontLight';}
+.text-body-med {font-family: 'bodyFontMed';}
+.text-head {font-family: "headFont";}
 
-.text-body-title {
-    font-family: bodyFontMed;
-    text-transform: uppercase;
-}
-
+//padding
 .text-padding-sm {padding-top: .5rem;}
 .text-padding-lg {padding-top: 1.2rem;}

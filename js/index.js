@@ -1,24 +1,163 @@
-//password access
+/////////////////////// buy button ////////////////////////////////
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('password-form');
-    const content = document.getElementById('content');
-    const comingSoon = document.getElementById('coming-soon');
+document.addEventListener('DOMContentLoaded', function () {
+    var client = ShopifyBuy.buildClient({
+        domain: "f5f197-2.myshopify.com",
+        storefrontAccessToken: "e2860e86b9272f1dc24f2784ea43eb62",
+    })
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    var ui = ShopifyBuy.UI.init(client);
 
-        let password = document.getElementById('password').value;
-        let correctPassword = ' ';
-
-        if (password === correctPassword) {
-            content.style.display = 'block';
-            comingSoon.style.display = 'none';
-        } else {
-            alert('try again...')
-        }
+    ui.createComponent('product', {
+        id: "8396742361403",
+        node: document.getElementById("vinyl-product"),
+        options: {
+            "product": {
+              "styles": {
+                "product": {
+                  "@media (min-width: 601px)": {
+                    "max-width": "calc(25% - 20px)",
+                    "margin-left": "20px",
+                    "margin-bottom": "50px"
+                  }
+                },
+                "button": {
+                  ":hover": {
+                    "background-color": "#52057B", //
+                    "display": "inline-block"
+                  },
+                  "background-color": "#52057B", //
+                  "border": "solid 1px #fff", //
+                  "display": "inline-block",
+                  ":focus": {
+                    "background-color": "#52057B" //
+                  },
+                  "border-radius": "0px",
+                  "padding-left": "100px",
+                  "padding-right": "100px"
+                },
+                "description": {
+                  "font-size": "10px",
+                  "color": "#ff0000"
+                }
+              },
+              "contents": {
+                "img": false,
+                "title": false,
+                "price": false
+              },
+              "text": {
+                "button": "Add to cart"
+              }
+            },
+            "productSet": {
+              "styles": {
+                "products": {
+                  "@media (min-width: 601px)": {
+                    "margin-left": "-20px"
+                  }
+                }
+              }
+            },
+            "modalProduct": {
+              "contents": {
+                "img": false,
+                "imgWithCarousel": true,
+                "button": false,
+                "buttonWithQuantity": true
+              },
+              "styles": {
+                "product": {
+                  "@media (min-width: 601px)": {
+                    "max-width": "100%",
+                    "margin-left": "0px",
+                    "margin-bottom": "0px"
+                  }
+                },
+                "button": {
+                  ":hover": {
+                    "background-color": "#52057B" //
+                  },
+                  "background-color": "#ff0000",
+                  ":focus": {
+                    "background-color": "#52057B" //
+                  },
+                  "border-radius": "0px",
+                  "padding-left": "100px",
+                  "padding-right": "100px"
+                },
+                "description": {
+                  "font-family": "Helvetica Neue, sans-serif",
+                  "font-weight": "normal",
+                  "font-size": "10px",
+                  "color": "#4c4c4c"
+                }
+              },
+              "text": {
+                "button": "Add to cart",
+                "font-size": "10px"
+              }
+            },
+            "option": {},
+            "cart": {
+              "styles": {
+                "button": {
+                  ":hover": {
+                    "background-color": "#52057B" //
+                  },
+                  "background-color": "#ff0000",
+                  ":focus": {
+                    "background-color": "#52057B" //
+                  },
+                  "border-radius": "0px"
+                }
+              },
+              "text": {
+                "total": "Subtotal",
+                "button": "Checkout"
+              },
+              "popup": false
+            },
+            "toggle": {
+              "styles": {
+                "toggle": {
+                  "background-color": "#ff0000",
+                  ":hover": {
+                    "background-color": "#52057B" //
+                  },
+                  ":focus": {
+                    "background-color": "#52057B" //
+                  }
+                }
+              }
+            }
+          },
     })
 })
+
+//////////////////////////////////////////////////////////////////
+
+//password access
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const form = document.getElementById('password-form');
+//     const content = document.getElementById('content');
+//     const comingSoon = document.getElementById('coming-soon');
+
+//     form.addEventListener('submit', (e) => {
+//         e.preventDefault();
+
+//         let password = document.getElementById('password').value;
+//         let correctPassword = ' ';
+
+//         if (password === correctPassword) {
+//             content.style.display = 'block';
+//             comingSoon.style.display = 'none';
+//         } else {
+//             alert('try again...')
+//         }
+//     })
+// })
 
 
 
