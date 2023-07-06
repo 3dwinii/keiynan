@@ -87,6 +87,9 @@ body,
 .text-size-large {
   font-size: 6.5rem; }
 
+.text-size-mixtape {
+  font-size: 2.5rem; }
+
 .text-body-light {
   font-family: 'bodyFontLight'; }
 
@@ -417,7 +420,7 @@ body,
     left: 0; } }
 
 .carousel-vinyl {
-  background-image: url("/imgs/rainbow-boy-background.png");
+  background-image: url("https://d29xd2y6qg0pu.cloudfront.net/rainbow-boy-background.png");
   background-position: center;
   background-size: cover; }
   .carousel-vinyl-img {
