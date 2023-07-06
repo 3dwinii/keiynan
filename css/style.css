@@ -78,17 +78,20 @@ body,
 .text-caps {
   text-transform: uppercase; }
 
-.text-size-normal {
+.text-size-100 {
+  font-size: 0.9rem; }
+
+.text-size-200 {
   font-size: 1rem; }
 
-.text-size-med {
+.text-size-300 {
+  font-size: 2.5rem; }
+
+.text-size-400 {
   font-size: 5rem; }
 
-.text-size-large {
+.text-size-500 {
   font-size: 6.5rem; }
-
-.text-size-mixtape {
-  font-size: 2.5rem; }
 
 .text-body-light {
   font-family: 'bodyFontLight'; }
@@ -182,7 +185,7 @@ body,
     font-size: 2rem; } }
 
 #content {
-  display: none; }
+  visibility: hidden; }
 
 #home {
   height: 100vh;
@@ -215,7 +218,7 @@ body,
     font-size: 2rem; } }
 
 #coming-soon {
-  display: block;
+  visibility: visible;
   background-color: black; }
 
 .coming-soon {
@@ -265,37 +268,6 @@ body,
 
 .cs-inline {
   display: inline; }
-
-#shop {
-  display: none; }
-
-.shop-container {
-  width: 100vw;
-  height: 100vh;
-  margin-top: 2rem; }
-
-.shop-row {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.shop-content {
-  text-align: center;
-  font-size: 1rem;
-  color: #FF0000; }
-
-.shop-text {
-  padding: 0 5%;
-  line-height: 2.5;
-  letter-spacing: .2rem; }
-
-@media (max-width: 767px) {
-  .shop-text {
-    line-height: 1.4;
-    font-size: 1.8rem; }
-  .shop-product {
-    padding: 0 15%; } }
 
 .document-center {
   position: absolute;
@@ -456,7 +428,7 @@ body,
     top: 1rem;
     transform: translateY(0) translateX(-50%); }
   .carousel-vinyl-rb {
-    font-size: 3.5rem;
+    font-size: 5rem;
     left: 10px;
     bottom: 5rem; }
   .carousel-vinyl-lp01, .carousel-vinyl-hide-text {

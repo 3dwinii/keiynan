@@ -22,10 +22,11 @@
 .text-caps {text-transform: uppercase;}
 
 //font size
-.text-size-normal {font-size: $fosi-body;}
-.text-size-med {font-size: $fosi-head-med;}
-.text-size-large {font-size: $fosi-head-large;}
-.text-size-mixtape {font-size: 2.5rem;}
+.text-size-100 {font-size: $fosi-100;}
+.text-size-200 {font-size: $fosi-200;}
+.text-size-300 {font-size: $fosi-300;}
+.text-size-400 {font-size: $fosi-400;}
+.text-size-500 {font-size: $fosi-500;}
 
 //font family
 .text-body-light {font-family: 'bodyFontLight';}

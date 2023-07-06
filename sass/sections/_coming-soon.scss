@@ -1,5 +1,6 @@
 #coming-soon {
-    display: block;
+    // display: none;
+    visibility: visible;
     background-color: black;
 }
 
@@ -54,7 +55,7 @@
         display: none;
     }
     .coming-soon-text {
-        font-size: $fosi-body;
+        font-size: $fosi-200;
     }
 }
 

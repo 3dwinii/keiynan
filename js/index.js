@@ -1,6 +1,30 @@
 /////////////////////// buy button ////////////////////////////////
 
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('password-form');
+  const content = document.getElementById('content');
+  const comingSoon = document.getElementById('coming-soon');
+
+  form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let password = document.getElementById('password').value;
+      let correctPassword = ' ';
+
+      if (password === correctPassword) {
+          // content.style.display = 'block';
+          // comingSoon.style.display = 'none';
+          content.style.visibility = "visible";
+          comingSoon.style.visibility = "hidden";
+      } else {
+          alert('try again...')
+      }
+  })
+})
+
+
 document.addEventListener('DOMContentLoaded', function () {
+  
     var client = ShopifyBuy.buildClient({
         domain: "f5f197-2.myshopify.com",
         storefrontAccessToken: "e2860e86b9272f1dc24f2784ea43eb62",
@@ -353,25 +377,7 @@ enterBtn.addEventListener("click", () => {
 
 //password access
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('password-form');
-    const content = document.getElementById('content');
-    const comingSoon = document.getElementById('coming-soon');
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        let password = document.getElementById('password').value;
-        let correctPassword = ' ';
-
-        if (password === correctPassword) {
-            content.style.display = 'block';
-            comingSoon.style.display = 'none';
-        } else {
-            alert('try again...')
-        }
-    })
-})
 
 
 
