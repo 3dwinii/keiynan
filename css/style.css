@@ -79,7 +79,7 @@ body,
   text-transform: uppercase; }
 
 .text-size-normal {
-  font-size: 0.8rem; }
+  font-size: 1rem; }
 
 .text-size-med {
   font-size: 5rem; }
@@ -196,17 +196,14 @@ body,
 
 .home-link {
   position: absolute;
-  bottom: 17rem;
+  bottom: 10rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2; }
   .home-link-text {
-    text-decoration: none;
-    font-size: 2rem;
-    color: white; }
+    text-decoration: none; }
     .home-link-text:hover {
-      color: inherit;
-      cursor: url(); }
+      cursor: pointer; }
 
 @media (max-width: 767px) {
   .home-link-text {
@@ -260,7 +257,7 @@ body,
   .coming-soon-links {
     display: none; }
   .coming-soon-text {
-    font-size: 0.8rem; } }
+    font-size: 1rem; } }
 
 .cs-inline {
   display: inline; }
@@ -281,7 +278,7 @@ body,
 
 .shop-content {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #FF0000; }
 
 .shop-text {
@@ -311,16 +308,16 @@ body,
   background-color: black; }
 
 .carousel-container {
-  max-width: 980px;
-  width: 95%; }
+  width: 80%;
+  height: 85%; }
 
 .carousel {
   position: relative;
   width: 100%;
-  padding-top: calc(700 / 1200 * 100%);
+  height: 100%;
   overflow: hidden; }
 
-.carousel-container img {
+.carousel-screen {
   position: absolute;
   top: 0;
   left: 0;
@@ -331,12 +328,13 @@ body,
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   top: 0;
   left: 0;
   height: 100%;
   width: 147px;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-bottom: 20px; }
 
 .left-arrow:hover {
   background-color: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
@@ -345,21 +343,22 @@ body,
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   top: 0;
   right: 0;
   height: 100%;
   width: 147px;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-bottom: 20px; }
 
 .right-arrow:hover {
   background-color: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
 
 .chevron {
-  width: 25px;
-  height: 25px;
-  border: solid red;
-  border-width: 10px 10px 0 0; }
+  width: 15px;
+  height: 15px;
+  border: solid #FF0000;
+  border-width: 2px 2px 0 0; }
 
 .chevron.right {
   transform: rotate(45deg); }
@@ -383,40 +382,14 @@ body,
 
 .circle {
   border: 1px solid red;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer; }
 
 .circle-fill {
   background-color: red; }
-
-.text-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  bottom: 45px;
-  left: 0;
-  width: 100%;
-  color: red;
-  text-align: center; }
-
-.text-container p:nth-child(1) {
-  margin: 10px 100px;
-  font-size: 1.5em; }
-
-.text-container p:nth-child(2) {
-  margin: 10px 100px 20px 100px; }
-
-.carousel-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
 
 @keyframes toRight {
   0% {
@@ -442,24 +415,7 @@ body,
   100% {
     left: 0; } }
 
-.carousel-section {
-  background-color: white;
-  height: 100vh;
-  width: 100vw;
-  padding: 0 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.carousel-inner {
-  height: 50rem;
-  width: 85rem; }
-
-.carousel-item {
-  position: relative; }
-
 .carousel-vinyl {
-  height: inherit;
   background-image: url("/imgs/rainbow-boy-background.png");
   background-position: center;
   background-size: cover; }
@@ -470,42 +426,71 @@ body,
     left: 50%;
     transform: translateX(-50%) translateY(-50%); }
   .carousel-vinyl-text-right {
-    width: 15rem;
+    width: 18rem;
     position: absolute;
-    right: 10rem;
+    right: 8rem;
     top: 55%;
     transform: translateY(-50%); }
   .carousel-vinyl-lp01 {
     position: absolute;
-    left: 15rem;
+    left: 12rem;
     top: 8rem; }
   .carousel-vinyl-rb {
     position: absolute;
-    left: 15rem;
+    left: 12rem;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2; }
   .carousel-vinyl-btn {
     position: absolute;
-    left: 15rem;
+    left: 12rem;
     bottom: 5rem; }
 
-.carousel-mixtape-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+@media (max-width: 600px) {
+  .carousel-vinyl-img {
+    height: 40%;
+    top: 1rem;
+    transform: translateY(0) translateX(-50%); }
+  .carousel-vinyl-rb {
+    font-size: 3.5rem;
+    left: 10px;
+    bottom: 5rem; }
+  .carousel-vinyl-lp01, .carousel-vinyl-hide-text {
+    display: none; } }
 
-.carousel-musiclinks-test {
-  position: absolute;
-  top: 50px;
-  left: 200px; }
+.carousel-mixtape {
+  background-image: url("/imgs/mixtape-coming-soon.png");
+  background-position: center;
+  background-size: cover; }
+  .carousel-mixtape-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
 
-.carousel-musiclinks-links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+.carousel-links {
+  background-image: url("/imgs/billy-coming-soon.png");
+  background-position: center;
+  background-size: cover; }
+  .carousel-links-container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: flex;
+    justify-content: space-evenly; }
+  .carousel-links-btn {
+    text-align: center;
+    border: 1px #FF0000 solid;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px; }
+  .carousel-links-text {
+    text-decoration: none; }
 
-.carousel-musiclinks-btn {
-  color: #FF0000; }
+@media (max-width: 600px) {
+  .carousel-links-container {
+    flex-direction: column; }
+  .carousel-links-btn {
+    margin: 10px 0; } }

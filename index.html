@@ -30,19 +30,93 @@
                 <source src="https://d29xd2y6qg0pu.cloudfront.net/WEBSITE+INTRO.mp4" type="video/mp4">
             </video>
             <!-- the video is stored on aws cdn! it's in an s3 bucket, which you then make a 'distribution' for on aws Cloudfront, **make sure all the access permissions are set to public read access** and then you link it in the html. so cool cdn wow. -->
-            <div class="home-link">
-                <p class="home-link-text" href="#">[ENTER]</p>
+            <div class="home-link" id="enter-btn">
+                <p class="home-link-text || text-size-normal text-white text-body-med" href="#">[ENTER]</p>
             </div>
 
         </section>
+        <!-- -------------------------------------------------------------------------------- -->
+        <div class="document-center">
+          <div class="carousel-container">
+              <div class="carousel" id="carousel">
+  
+                  <section class="carousel-screen carousel-vinyl">
+                          <!-- <div id="vinyl-product"></div> -->
+                          <!-- <p>mixtape coming soon</p> -->
+                          <!-- <p>danke schon</p> -->
+                          <img class="carousel-vinyl-img" src="imgs/garden-asset.png" alt="Rainbow Boy Vinyl Cover">
+                          <p class="carousel-vinyl-lp01"><span class="text-caps text-size-med text-orange text-body-med">LP01</span><br><span class="text-body-med text-size-normal text-white text-caps">ANNIVERSARY EDITION</span></p>
+                          <h2 class="text-orange text-size-large text-caps || carousel-vinyl-rb">Rainbow<br>Boy</h2>
+                          <div class="carousel-vinyl-text-right">
+                            <span>
+                              <p class="text-size-normal text-body-med text-white text-caps">Produced and composed by Tyler J Minford</p>
+                              <p class="text-size-normal text-body-med text-white text-caps text-padding-lg">Executive produced, performed and written by Keiynan Lonsdale</p>
+                            </span>
+                              <span class="carousel-vinyl-hide-text">
+                                <p class="text-body-light text-size-normal text-white text-padding-sm">To all the dreamers, who at some stage in their lives have been been afraid to express the fullness of their light... You deserve to cultivate a life in which you are proud, you deserve to nurture a love in which you feel bold, and you deserve to hold peace and abundance within your heart for who you are and what gifts you offer in this life, "big" or "small".</p>
+                                <p class="text-body-light text-size-normal text-white text-padding-sm">You have always been, and always will be, a miraculous stardust Universe experiencing itself through worlds of colour and vibration. I trust you will find your gold.</p>
+                                <p class="text-body-light text-size-normal text-white text-padding-sm">Love,<br>Keiynan</p>  
+                              </span>
+      
+                              <p class="carousel-vinyl-price || text-body-med text-size-normal text-orange text-padding-lg">$69 AUD</p>
+                          </div>
+                          <div id="vinyl-product" class="carousel-vinyl-btn"></div>
+                  </section>
+  
+                  <section class="carousel-screen carousel-links">
+                    <div class="carousel-links-container">
+                      <div class="carousel-links-btn">
+                        <a class="carousel-links-text || text-caps text-red text-body-med text-size-normal" href="https://open.spotify.com/artist/0tkkz8CmkHga4YZgSHEDVl">Spotify</a>
+                      </div>
+                      <div class="carousel-links-btn">
+                        <a class="carousel-links-text || text-caps text-red text-body-med text-size-normal" href="https://www.youtube.com/user/keiynanlonsdale">Youtube</a>
+                      </div>
+                      <div class="carousel-links-btn">
+                        <a class="carousel-links-text || text-caps text-red text-body-med text-size-normal" href="https://music.apple.com/us/artist/keiynan-lonsdale/828398439">Apple Music</a>
+                      </div>
+                      <div class="carousel-links-btn">
+                        <a class="carousel-links-text || text-caps text-red text-body-med text-size-normal" href="https://www.instagram.com/keiynanlonsdale/?hl=en">Instagram</a>
+                      </div>
+                      <div class="carousel-links-btn">
+                        <a class="carousel-links-text || text-caps text-red text-body-med text-size-normal" href="https://www.tiktok.com/@keiynan?lang=en">TikTok</a>
+                      </div>
+                      <div class="carousel-links-btn">
+                        <a class="carousel-links-text || text-caps text-red text-body-med text-size-normal" href="https://twitter.com/keiynanlonsdale?">Twitter</a>
+                      </div>
+                    </div>
+                  </section>
+  
+                  <section class="carousel-screen carousel-mixtape">
+                    <p class="text-body-med text-red text-size-normal || carousel-mixtape-text">MIXTAPE COMING SOON</p>
+                  </section>
+                    
+              </div>
+          </div>
+          <section class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </section>
+          <div class="left-arrow" id="left-arrow">
+            <!-- <span class="bar left"></span> -->
+            <span class="chevron left"></span>
+          </div>
+          <div class="right-arrow" id="right-arrow">
+            <!-- <span class="bar right"></span> -->
+            <span class="chevron right"></span>
+          </div>
+      </div>
+  
+  
+        <!----------------------------------------------------------------------------------  -->
 
-        <section class="carousel-section" id="carousel">
+        <!-- <section class="carousel-section" id="carousel"> -->
             <!-- <div class="carousel-head">
                 <h3>MUSIC</h3>
                 <H3>HOME</H3>
                 <H3>CART</H3>
             </div> -->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
               <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -63,9 +137,9 @@
 
                         <p class="text-body-med text-size-normal text-orange text-padding-lg">$69 AUD</p>
                     </div>
-                    <div id="vinyl-product" class="carousel-vinyl-btn"></div>
+                    <div id="vinyl-product" class="carousel-vinyl-btn"></div> -->
                     <!-- <div class="carousel-vinyl-btn" id='product-component-1688348570970'></div> -->
-                  </div>
+                  <!-- </div>
 
                 
 
@@ -110,7 +184,7 @@
                 </button>
               </div>
 
-        </section>
+        </section> -->
 
         <!-- <section id="follow" class="section">
             <div class="follow-img"></div>
@@ -171,164 +245,6 @@
 
       <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
       <script src="js/index.js"></script>
-    <!-- <script type="text/javascript">
-      /*<![CDATA[*/
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'f5f197-2.myshopify.com',
-            storefrontAccessToken: 'd795cd7842a6f2b4bb5c704109127f47',
-          });
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('product', {
-              id: '8396742361403',
-              node: document.getElementById('product-component-1688348570970'),
-              moneyFormat: '%24%7B%7Bamount%7D%7D',
-              options: {
-        "product": {
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "calc(25% - 20px)",
-                "margin-left": "20px",
-                "margin-bottom": "50px"
-              }
-            },
-            "button": {
-              ":hover": {
-                "background-color": "transparent", //
-                "display": "inline-block"
-              },
-              "background-color": "transparent", //
-              "border": "solid 1px #fff", //
-              "display": "inline-block",
-              ":focus": {
-                "background-color": "transparent" //
-              },
-              "border-radius": "0px",
-              "padding-left": "100px",
-              "padding-right": "100px"
-            },
-            "description": {
-              "font-size": "10px",
-              "color": "#ff0000"
-            }
-          },
-          "contents": {
-            "img": false,
-            "title": false,
-            "price": false
-          },
-          "text": {
-            "button": "Add to cart"
-          }
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
-        },
-        "modalProduct": {
-          "contents": {
-            "img": false,
-            "imgWithCarousel": true,
-            "button": false,
-            "buttonWithQuantity": true
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "100%",
-                "margin-left": "0px",
-                "margin-bottom": "0px"
-              }
-            },
-            "button": {
-              ":hover": {
-                "background-color": "transparent" //
-              },
-              "background-color": "#ff0000",
-              ":focus": {
-                "background-color": "transparent" //
-              },
-              "border-radius": "0px",
-              "padding-left": "100px",
-              "padding-right": "100px"
-            },
-            "description": {
-              "font-family": "Helvetica Neue, sans-serif",
-              "font-weight": "normal",
-              "font-size": "10px",
-              "color": "#4c4c4c"
-            }
-          },
-          "text": {
-            "button": "Add to cart",
-            "font-size": "10px"
-          }
-        },
-        "option": {},
-        "cart": {
-          "styles": {
-            "button": {
-              ":hover": {
-                "background-color": "transparent" //
-              },
-              "background-color": "#ff0000",
-              ":focus": {
-                "background-color": "transparent" //
-              },
-              "border-radius": "0px"
-            }
-          },
-          "text": {
-            "total": "Subtotal",
-            "button": "Checkout"
-          },
-          "popup": false
-        },
-        "toggle": {
-          "styles": {
-            "toggle": {
-              "background-color": "#ff0000",
-              ":hover": {
-                "background-color": "transparent" //
-              },
-              ":focus": {
-                "background-color": "transparent" //
-              }
-            }
-          }
-        }
-      },
-            });
-          });
-        }
-      })();
-      /*]]>*/
-      </script> -->
-
 
 </body>
 </html>
