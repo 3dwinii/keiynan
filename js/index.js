@@ -343,25 +343,25 @@ enterBtn.addEventListener("click", () => {
 
 //password access
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const form = document.getElementById('password-form');
-//     const content = document.getElementById('content');
-//     const comingSoon = document.getElementById('coming-soon');
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('password-form');
+    const content = document.getElementById('content');
+    const comingSoon = document.getElementById('coming-soon');
 
-//     form.addEventListener('submit', (e) => {
-//         e.preventDefault();
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-//         let password = document.getElementById('password').value;
-//         let correctPassword = ' ';
+        let password = document.getElementById('password').value;
+        let correctPassword = 'H0ld1ngbackwav3s';
 
-//         if (password === correctPassword) {
-//             content.style.display = 'block';
-//             comingSoon.style.display = 'none';
-//         } else {
-//             alert('try again...')
-//         }
-//     })
-// })
+        if (password === correctPassword) {
+            content.style.display = 'block';
+            comingSoon.style.display = 'none';
+        } else {
+            alert('try again...')
+        }
+    })
+})
 
 
 

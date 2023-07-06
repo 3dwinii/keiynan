@@ -1,5 +1,6 @@
 #coming-soon {
-    display: none;
+    display: block;
+    background-color: black;
 }
 
 .coming-soon {
@@ -22,7 +23,7 @@
     }
 
     &-text {
-        color: red;
+        color: $color-orange;
         position: absolute;
         top: 50%;
         left: 50%;
