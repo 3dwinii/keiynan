@@ -184,6 +184,9 @@ body,
   .follow-text-btn-subscribe {
     font-size: 2rem; } }
 
+#content {
+  visibility: hidden; }
+
 #home {
   height: 100vh;
   width: 100vw;
@@ -228,6 +231,7 @@ body,
     visibility: visible; } }
 
 #coming-soon {
+  visibility: visible;
   background-color: black; }
 
 .coming-soon {
