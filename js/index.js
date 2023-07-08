@@ -1,4 +1,5 @@
-/////////////////////// buy button ////////////////////////////////
+/////////////////////// password ////////////////////////////////
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('password-form');
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+/////////////////////// buy button ////////////////////////////////
 
 document.addEventListener('DOMContentLoaded', function () {
   
@@ -58,7 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
                   },
                   "border-radius": "0px",
                   "padding-left": "100px",
-                  "padding-right": "100px"
+                  "padding-right": "100px",
+                  
                 },
                 "description": {
                   "font-size": "10px",
@@ -71,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "price": false
               },
               "text": {
-                "button": "Add to cart"
+                "button": "ADD TO CART"
               }
             },
             "productSet": {

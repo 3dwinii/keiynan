@@ -46,13 +46,13 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     top: 0;
     left: 0;
     height: 100%;
     width: 147px;
     cursor: pointer;
-    padding-bottom: 20px;
+    // padding-bottom: 10rem;
 }
 
 .left-arrow:hover {
@@ -63,13 +63,23 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     top: 0;
     right: 0;
     height: 100%;
     width: 147px;
     cursor: pointer;
-    padding-bottom: 20px;
+    // padding-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+    .right-arrow {
+        width: 2.5rem;
+    }
+
+    .left-arrow {
+        width: 2.5rem;
+    }
 }
 
 .right-arrow:hover {
@@ -194,7 +204,6 @@
         background-image: url('https://d29xd2y6qg0pu.cloudfront.net/rainbow-boy-background.png');
         background-position: center;
         background-size: cover;
-
         &-img {
             height: 28rem;
             position: absolute;
@@ -202,7 +211,6 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
         }
-
         &-text-right {
             width: 18rem;
             position: absolute;
@@ -210,13 +218,11 @@
             top: 55%;
             transform: translateY(-50%);
         }
-
         &-lp01 {
             position: absolute;
             left: 12rem;
             top: 8rem;
         }
-
         &-rb {
             position: absolute;
             left: 12rem;
@@ -224,7 +230,6 @@
             transform: translateY(-50%);
             z-index: 2;
         }
-
         &-btn {
             position: absolute;
             left: 12rem;
@@ -233,23 +238,35 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .carousel-vinyl {
         &-img {
             height: 40%;
             top: 1rem;
             transform: translateY(0) translateX(-50%);
         }
-
         &-rb {
-            font-size: $fosi-400;
+            font-size: 3.5rem;
             left: 10px;
-            bottom: 5rem;
+            top: 55%;
+            // bottom: 5rem;
         }
-
         &-lp01,
         &-hide-text {
             display: none;
+        }
+        &-text-right {
+            position: absolute;
+            left: 10px;
+            top: 75%;
+        }
+        &-sm-text {
+            font-size: .8rem !important;
+        }
+        &-btn {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 1rem;
         }
     }
 }
@@ -268,6 +285,13 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-mixtape-text {
+        font-size: $fosi-200;
+        width: 200px;
     }
 }
 
@@ -304,7 +328,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .carousel-links-container {
         flex-direction: column;
     }
