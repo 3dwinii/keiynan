@@ -21,6 +21,13 @@
     height: 85%;
 }
 
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 85%;
+        height: 90%;
+    }
+}
+
 .carousel {
     position: relative;
     width: 100%;
@@ -86,7 +93,7 @@
     background-color: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3));
 }
 
-// this next bit is making the arrows from scratch, kinda lame maybe just use icons instead? but will do this for now
+// this next bit is making the arrows from scratch
 
 .chevron {
     width: 15px;
@@ -247,7 +254,7 @@
         }
         &-rb {
             font-size: 3.5rem;
-            left: 10px;
+            left: 1rem;
             top: 55%;
             // bottom: 5rem;
         }
@@ -257,15 +264,15 @@
         }
         &-text-right {
             position: absolute;
-            left: 10px;
+            left: 1rem;
             top: 75%;
         }
         &-sm-text {
             font-size: .8rem !important;
         }
         &-btn {
-            left: 50%;
-            transform: translateX(-50%);
+            left: 1rem;
+            // transform: translateX(-50%);
             bottom: 1rem;
         }
     }

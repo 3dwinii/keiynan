@@ -10,11 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       let password = document.getElementById('password').value;
-      let correctPassword = ' ';
+      let correctPassword = 'H0ld1ngbackwav3s';
 
       if (password === correctPassword) {
-          // content.style.display = 'block';
-          // comingSoon.style.display = 'none';
           content.style.visibility = "visible";
           comingSoon.style.visibility = "hidden";
       } else {
@@ -61,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
                   "border-radius": "0px",
                   "padding-left": "100px",
                   "padding-right": "100px",
-                  
                 },
                 "description": {
                   "font-size": "10px",
@@ -377,8 +374,6 @@ enterBtn.addEventListener("click", () => {
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
-
-//password access
 
 
 
