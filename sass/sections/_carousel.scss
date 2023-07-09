@@ -297,7 +297,7 @@
 ////////////////////// mixtape ////////////////////////
 
 .carousel {
-    &-mixtape {
+    &-join {
         background-image: url("/imgs/mixtape-coming-soon.png");
         background-position: center;
         background-size: cover;
@@ -307,13 +307,38 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
         }
+        &-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+        }
+        &-btn {
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: transparent;
+            border-radius: 10px;
+            border: solid $color-red 2px;
+            color: $color-red;
+            font-size: $fosi-300;
+            &::placeholder {
+                color: $color-red;
+                text-align: center;
+            }
+            &:active {
+                border-color: $color-red;
+            }
+        }
+        &-subscribe {
+            cursor: pointer;
+        }
     }
 }
 
 @media (max-width: 768px) {
-    .carousel-mixtape-text {
+    .carousel-join-btn {
         font-size: $fosi-200;
-        width: 200px;
     }
 }
 
@@ -337,7 +362,7 @@
 
         &-btn {
             text-align: center;
-            border: 1px $color-red solid;
+            border: 2px $color-red solid;
             border-radius: 20px;
             display: inline-block;
             padding: 10px 20px;
