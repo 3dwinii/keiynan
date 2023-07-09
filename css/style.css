@@ -1,35 +1,3 @@
-@keyframes flicker {
-  0% {
-    opacity: 100%; }
-  10% {
-    opacity: 0; }
-  20% {
-    opacity: 100%; }
-  30% {
-    opacity: 0; }
-  40% {
-    opacity: 100%; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 100%; } }
-
-@keyframes flicker-cont {
-  1% {
-    opacity: 100%; }
-  4% {
-    opacity: 0; }
-  6% {
-    opacity: 100%; }
-  8% {
-    opacity: 0; }
-  10% {
-    opacity: 100%; }
-  12% {
-    opacity: 0; }
-  24% {
-    opacity: 100%; } }
-
 body {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -123,82 +91,6 @@ body,
   .btn:active {
     border-color: #FF0000; }
 
-#follow {
-  z-index: 2;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  margin-top: 8px;
-  display: none; }
-
-.follow-img {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../imgs/master.jpeg");
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  background-position: center;
-  background-size: cover; }
-
-.follow-response {
-  color: red !important; }
-
-.follow-text {
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding-top: 20%; }
-  .follow-text-cont {
-    text-align: center;
-    margin: auto; }
-  .follow-text-error {
-    visibility: hidden; }
-  .follow-text-form {
-    font-size: 2rem !important; }
-  .follow-text-marbo {
-    margin-bottom: 5rem; }
-  .follow-text-form {
-    visibility: visible; }
-  .follow-text-btn {
-    border: 1px solid;
-    border-radius: 3rem;
-    margin: 1rem;
-    display: inline !important;
-    margin: 1rem !important;
-    color: white;
-    border-color: white;
-    font-size: 2.5rem; }
-    .follow-text-btn:hover {
-      border: none; }
-  .follow-text-input {
-    border: 1px solid;
-    border-radius: 3rem;
-    margin: 1rem;
-    display: inline !important;
-    margin: 1rem !important;
-    color: black;
-    border-color: white;
-    font-size: 1.5rem; }
-    .follow-text-input:hover {
-      border: none; }
-  .follow-text-link {
-    text-decoration: none;
-    color: white; }
-    .follow-text-link:hover {
-      text-decoration: none;
-      color: white; }
-
-@media (max-width: 767px) {
-  .follow-text-marbo {
-    margin-bottom: 2rem; }
-  .follow-text-btn-subscribe {
-    font-size: 2rem; } }
-
 #home {
   height: 100vh;
   width: 100vw;
@@ -255,16 +147,9 @@ body,
     top: 2rem;
     left: 2rem; }
   .coming-soon-password-submit {
-    border: 1px solid;
-    border-radius: 3rem;
-    margin: 1rem;
-    display: inline !important;
-    margin: 1rem !important;
     color: white;
     border-color: white;
     font-size: 1.5rem; }
-    .coming-soon-password-submit:hover {
-      border: none; }
   .coming-soon-text {
     color: #FC6935;
     position: absolute;
@@ -344,14 +229,13 @@ body,
   background-color: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
 
 .right-arrow {
-  margin-top: 5rem;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   right: 0;
-  height: 90%;
+  height: 100%;
   width: 147px;
   cursor: pointer; }
 
@@ -429,12 +313,6 @@ body,
   background-image: url("https://d29xd2y6qg0pu.cloudfront.net/rainbow-boy-background.png");
   background-position: center;
   background-size: cover; }
-  .carousel-vinyl-img {
-    height: 28rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); }
   .carousel-vinyl-carousel-container {
     height: 28rem;
     width: 28rem;
@@ -506,23 +384,20 @@ body,
   .carousel-vinyl-text-right {
     width: 18rem;
     position: absolute;
-    right: 8rem;
+    right: 5%;
     top: 55%;
     transform: translateY(-50%); }
-  .carousel-vinyl-lp01 {
+  .carousel-vinyl-text-left {
+    z-index: 2;
     position: absolute;
-    left: 12rem;
-    top: 8rem; }
-  .carousel-vinyl-rb {
-    position: absolute;
-    left: 12rem;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2; }
+    left: 5%;
+    top: 40%;
+    transform: translateY(-50%); }
   .carousel-vinyl-btn {
     position: absolute;
-    left: 12rem;
-    bottom: 5rem; }
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%); }
   .carousel-vinyl-mobile-text {
     display: none; }
 
@@ -556,6 +431,7 @@ body,
     padding-left: 4rem; }
   .carousel-vinyl-btn {
     left: 1rem;
+    transform: translateX(0);
     bottom: 1rem; } }
 
 .carousel-join {
@@ -600,16 +476,3 @@ body,
     flex-direction: column; }
   .carousel-links-btn {
     margin: 10px 0; } }
-
-.nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .nav-btn {
-    padding: 2rem;
-    cursor: pointer; }

@@ -68,14 +68,14 @@
 }
 
 .right-arrow {
-    margin-top: 5rem;
+    // margin-top: 5rem;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     right: 0;
-    height: 90%;
+    height: 100%;
     width: 147px;
     cursor: pointer;
     // padding-bottom: 10rem;
@@ -213,13 +213,13 @@
         background-image: url('https://d29xd2y6qg0pu.cloudfront.net/rainbow-boy-background.png');
         background-position: center;
         background-size: cover;
-        &-img {
-            height: 28rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-        }
+        // &-img {
+        //     height: 28rem;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translateX(-50%) translateY(-50%);
+        // }
         ////////////////////////////////////////////////////////////////
         &-carousel-container {
             height: 28rem;
@@ -308,26 +308,35 @@
         &-text-right {
             width: 18rem;
             position: absolute;
-            right: 8rem;
+            right: 5%;
             top: 55%;
             transform: translateY(-50%);
         }
-        &-lp01 {
-            position: absolute;
-            left: 12rem;
-            top: 8rem;
-        }
-        &-rb {
-            position: absolute;
-            left: 12rem;
-            top: 50%;
-            transform: translateY(-50%);
+
+        &-text-left {
             z-index: 2;
+            position: absolute;
+            left: 5%;
+            top: 40%;
+            transform: translateY(-50%);
         }
+        // &-lp01 {
+        //     position: absolute;
+        //     left: 12rem;
+        //     top: 8rem;
+        // }
+        // &-rb {
+        //     position: absolute;
+        //     left: 12rem;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     z-index: 2;
+        // }
         &-btn {
             position: absolute;
-            left: 12rem;
-            bottom: 5rem;
+            left: 50%;
+            bottom: 2rem;
+            transform: translateX(-50%);
         }
         &-mobile-text {
             display: none;
@@ -394,7 +403,7 @@
         // }
         &-btn {
             left: 1rem;
-            // transform: translateX(-50%);
+            transform: translateX(0);
             bottom: 1rem;
         }
     }

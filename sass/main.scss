@@ -1,14 +1,9 @@
-@import 'abstract/variables';
-@import 'abstract/mixins';
-@import 'abstract/animations';
-
+@import 'variables';
 @import 'base';
 @import 'typography';
 @import 'components';
 
-@import 'sections/follow-pop-up';
 @import 'sections/home';
 @import 'sections/coming-soon';
-@import 'sections/shop';
 @import 'sections/carousel';
 @import 'sections/nav';
