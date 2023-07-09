@@ -186,6 +186,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let inAnim = false;
   //aniation time
   let animTime = 500; //will prob not neet this/ /////////////
+  //nav btns //////////////
+  let joinBtn = document.getElementById("join");
+  let shopBtn = document.getElementById("shop");
+  let musicBtn = document.getElementById("music");
 
   //sort out starting position
   sortPositioning(screenStore[currentScreen], screenStore[currentScreen - 1], screenStore[currentScreen + 1]);
@@ -201,7 +205,8 @@ document.addEventListener("DOMContentLoaded", () => {
   leftArrow.addEventListener("click", () => {
     startAnim("left");
   });
-
+  ////////////
+  //////////
   function startAnim(direction) {
     if(!inAnim) {
       inAnim = true;
@@ -326,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if(!inAnim) {
         //convert nodelist to array to be able to use indexof method
         let circleStoreArray = Array.prototype.slice.call(circleStore);
-        let circleIndex = circleStoreArray.indexOf(event.targert);
+        let circleIndex = circleStoreArray.indexOf(event.target);
         //configure circle styling
         highlightCircle(event.target)
       }

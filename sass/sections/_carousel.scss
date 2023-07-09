@@ -50,14 +50,14 @@
 //area is clickable.
 
 .left-arrow {
-    margin-top: 5rem;
+    // margin-top: 5rem; //for nav bar.
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
-    height: 90%;
+    height: 100%; //change this to 90% if putting nav par back in.
     width: 147px;
     cursor: pointer;
     // padding-bottom: 10rem;

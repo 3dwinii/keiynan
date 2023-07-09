@@ -330,14 +330,13 @@ body,
   height: 100%; }
 
 .left-arrow {
-  margin-top: 5rem;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
-  height: 90%;
+  height: 100%;
   width: 147px;
   cursor: pointer; }
 
