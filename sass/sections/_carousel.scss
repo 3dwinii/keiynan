@@ -50,13 +50,14 @@
 //area is clickable.
 
 .left-arrow {
+    margin-top: 5rem;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 90%;
     width: 147px;
     cursor: pointer;
     // padding-bottom: 10rem;
@@ -67,13 +68,14 @@
 }
 
 .right-arrow {
+    margin-top: 5rem;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 90%;
     width: 147px;
     cursor: pointer;
     // padding-bottom: 10rem;
@@ -218,6 +220,91 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
         }
+        ////////////////////////////////////////////////////////////////
+        &-carousel-container {
+            height: 28rem;
+            width: 28rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            overflow: hidden; //////check this is right??
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-carousel {
+            &-left-arrow {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 2rem;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 7rem;
+                cursor: pointer;
+            }
+            &-right-arrow {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 2rem;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 7rem;
+                cursor: pointer;
+            }
+            &-chevron {
+                height: 1.5rem;
+                width: 1.5rem;
+                border-top: solid 2px $color-orange;
+                border-right: solid 2px $color-orange;
+            }
+            &-right {
+                transform: rotate(45deg);
+            }
+            &-left {
+                transform: rotate(-135deg);
+            }
+            &-left-arrow:hover .carousel-vinyl-carousel-chevron,
+            &-right-arrow:hover .carousel-vinyl-carousel-chevron {
+                border-color: $color-red;
+            }
+            &-circle-container {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 4rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-circle {
+                height: .8rem;
+                width: .8rem;
+                border: 2px solid $color-orange;
+                border-radius: 50%;
+                margin: 0 5px;
+                &-fill {
+                    background-color: $color-orange;
+                }
+            }
+            &-screen {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        ////////////////////////////////////////////////////////////////
         &-text-right {
             width: 18rem;
             position: absolute;
@@ -262,10 +349,30 @@
         &-rb-sm {
             font-size: 3.5rem;
         }
-        &-img {
-            height: 40%;
-            top: 1rem;
-            transform: translateY(0) translateX(-50%);
+        &-carousel {
+            &-container {
+                height: 15rem;
+                width: 15rem;
+                top: 2rem;
+                transform: translateY(0) translateX(-50%);    
+            }
+            &-chevron {
+                height: .8rem;
+                width: .8rem;    
+            }
+            &-circle-container {
+                display: none;
+            }
+            &-left-arrow {
+                align-items: center;
+                padding-bottom: 1rem;
+                padding-right: 4rem;
+            }
+            &-right-arrow {
+                align-items: center;
+                padding-bottom: 1rem;
+                padding-left: 4rem;
+            }
         }
         // &-rb {
         //     font-size: 3.5rem;
@@ -294,7 +401,7 @@
 }
 
 
-////////////////////// mixtape ////////////////////////
+////////////////////// join ////////////////////////
 
 .carousel {
     &-join {
@@ -314,22 +421,7 @@
             transform: translateX(-50%) translateY(-50%);
             text-align: center;
         }
-        &-btn {
-            padding: 1rem;
-            margin-top: 1rem;
-            background-color: transparent;
-            border-radius: 10px;
-            border: solid $color-red 2px;
-            color: $color-red;
-            font-size: $fosi-300;
-            &::placeholder {
-                color: $color-red;
-                text-align: center;
-            }
-            &:active {
-                border-color: $color-red;
-            }
-        }
+       
         &-subscribe {
             cursor: pointer;
         }
@@ -359,16 +451,7 @@
             display: flex;
             justify-content: space-evenly;
         }
-
-        &-btn {
-            text-align: center;
-            border: 2px $color-red solid;
-            border-radius: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            // margin: 0px 10px;
-        }
-
+        
         &-text {
             text-decoration: none;
         }

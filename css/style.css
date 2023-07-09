@@ -108,6 +108,21 @@ body,
 .text-padding-lg {
   padding-top: 1.2rem; }
 
+.btn {
+  text-align: center;
+  border: 2px #FF0000 solid;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #FF0000; }
+  .btn::placeholder {
+    color: #FF0000; }
+  .btn:active {
+    border-color: #FF0000; }
+
 #follow {
   z-index: 2;
   height: 100vh;
@@ -184,9 +199,6 @@ body,
   .follow-text-btn-subscribe {
     font-size: 2rem; } }
 
-#content {
-  visibility: hidden; }
-
 #home {
   height: 100vh;
   width: 100vw;
@@ -231,7 +243,6 @@ body,
     visibility: visible; } }
 
 #coming-soon {
-  visibility: visible;
   background-color: black; }
 
 .coming-soon {
@@ -319,13 +330,14 @@ body,
   height: 100%; }
 
 .left-arrow {
+  margin-top: 5rem;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 90%;
   width: 147px;
   cursor: pointer; }
 
@@ -333,13 +345,14 @@ body,
   background-color: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
 
 .right-arrow {
+  margin-top: 5rem;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 90%;
   width: 147px;
   cursor: pointer; }
 
@@ -423,6 +436,74 @@ body,
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%); }
+  .carousel-vinyl-carousel-container {
+    height: 28rem;
+    width: 28rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden; }
+    .carousel-vinyl-carousel-container img {
+      width: 100%;
+      height: 100%; }
+  .carousel-vinyl-carousel-left-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 7rem;
+    cursor: pointer; }
+  .carousel-vinyl-carousel-right-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 7rem;
+    cursor: pointer; }
+  .carousel-vinyl-carousel-chevron {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-top: solid 2px #FC6935;
+    border-right: solid 2px #FC6935; }
+  .carousel-vinyl-carousel-right {
+    transform: rotate(45deg); }
+  .carousel-vinyl-carousel-left {
+    transform: rotate(-135deg); }
+  .carousel-vinyl-carousel-left-arrow:hover .carousel-vinyl-carousel-chevron,
+  .carousel-vinyl-carousel-right-arrow:hover .carousel-vinyl-carousel-chevron {
+    border-color: #FF0000; }
+  .carousel-vinyl-carousel-circle-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .carousel-vinyl-carousel-circle {
+    height: .8rem;
+    width: .8rem;
+    border: 2px solid #FC6935;
+    border-radius: 50%;
+    margin: 0 5px; }
+    .carousel-vinyl-carousel-circle-fill {
+      background-color: #FC6935; }
+  .carousel-vinyl-carousel-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .carousel-vinyl-text-right {
     width: 18rem;
     position: absolute;
@@ -456,10 +537,24 @@ body,
     left: 1rem; }
   .carousel-vinyl-rb-sm {
     font-size: 3.5rem; }
-  .carousel-vinyl-img {
-    height: 40%;
-    top: 1rem;
+  .carousel-vinyl-carousel-container {
+    height: 15rem;
+    width: 15rem;
+    top: 2rem;
     transform: translateY(0) translateX(-50%); }
+  .carousel-vinyl-carousel-chevron {
+    height: .8rem;
+    width: .8rem; }
+  .carousel-vinyl-carousel-circle-container {
+    display: none; }
+  .carousel-vinyl-carousel-left-arrow {
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-right: 4rem; }
+  .carousel-vinyl-carousel-right-arrow {
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-left: 4rem; }
   .carousel-vinyl-btn {
     left: 1rem;
     bottom: 1rem; } }
@@ -479,19 +574,6 @@ body,
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     text-align: center; }
-  .carousel-join-btn {
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: transparent;
-    border-radius: 10px;
-    border: solid #FF0000 2px;
-    color: #FF0000;
-    font-size: 2rem; }
-    .carousel-join-btn::placeholder {
-      color: #FF0000;
-      text-align: center; }
-    .carousel-join-btn:active {
-      border-color: #FF0000; }
   .carousel-join-subscribe {
     cursor: pointer; }
 
@@ -511,12 +593,6 @@ body,
     transform: translateY(-50%) translateX(-50%);
     display: flex;
     justify-content: space-evenly; }
-  .carousel-links-btn {
-    text-align: center;
-    border: 2px #FF0000 solid;
-    border-radius: 20px;
-    display: inline-block;
-    padding: 10px 20px; }
   .carousel-links-text {
     text-decoration: none; }
 
@@ -525,3 +601,16 @@ body,
     flex-direction: column; }
   .carousel-links-btn {
     margin: 10px 0; } }
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav-btn {
+    padding: 2rem;
+    cursor: pointer; }
