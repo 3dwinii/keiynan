@@ -1,25 +1,25 @@
 /////////////////////// password ////////////////////////////////
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const form = document.getElementById('password-form');
-//   const content = document.getElementById('content');
-//   const comingSoon = document.getElementById('coming-soon');
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('password-form');
+  const content = document.getElementById('content');
+  const comingSoon = document.getElementById('coming-soon');
 
-//   form.addEventListener('submit', (e) => {
-//       e.preventDefault();
+  form.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-//       let password = document.getElementById('password').value;
-//       let correctPassword = 'H0ld1ngbackwav3s';
+      let password = document.getElementById('password').value;
+      let correctPassword = 'H0ld1ngbackwav3s';
 
-//       if (password === correctPassword) {
-//           content.style.visibility = "visible";
-//           comingSoon.style.visibility = "hidden";
-//       } else {
-//           alert('try again...')
-//       }
-//   })
-// })
+      if (password === correctPassword) {
+          content.style.visibility = "visible";
+          comingSoon.style.visibility = "hidden";
+      } else {
+          alert('try again...')
+      }
+  })
+})
 
 /////////////////////// buy button ////////////////////////////////
 
@@ -562,56 +562,3 @@ enterBtn.addEventListener("click", () => {
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-//button functionality
-
-
-// const followBtn = document.querySelector('.home-link');
-// const homeShopBtn = document.querySelector('.home-shop-btn')
-// const followSection = document.getElementById('follow');
-// const shopSection = document.getElementById('shop')
-
-// followBtn.addEventListener('click', () => {
-//     followSection.scrollIntoView({behavior: 'smooth'})  
-// })
-
-// homeShopBtn.addEventListener('click', () => {
-//     shopSection.scrollIntoView({behavior: 'smooth'})
-// })
-
-// smooth scroll to focus on sections
-
-// let currentSection;
-// let scrollTimeout;
-
-// window.addEventListener('scroll', () => {
-//     clearTimeout(scrollTimeout);
-
-//     scrollTimeout = setTimeout(() => {
-//         let sections = document.getElementsByClassName('section')
-//         let scrollPos = window.scrollY;
-//         //check if inside sec 0 (greater than 0, smaller than 1)
-//         if (scrollPos >= sections[0].offsetTop && scrollPos < sections[1].offsetTop) {
-//             currentSection = sections[0];
-//         //check if inside 1 (greater than 1, smaller than 2)
-//             currentSection = sections[1];
-//         } else if (scrollPos >= sections[1].offsetTop && scrollPos < sections[2].offsetTop) {
-//         //check if inside 2 (greater than 2)
-//         } else if (scrollPos >= sections[2].offsetTop) {
-//             currentSection = sections[2];
-//         }
-
-//         if (currentSection) {
-//             currentSection.scrollIntoView({
-//                 behavior: 'smooth',
-//                 block: 'start'
-//             })
-//             console.log(currentSection)
-//         }
-//     }, 100);
-// })
