@@ -135,6 +135,7 @@ body,
     visibility: visible; } }
 
 #coming-soon {
+  visibility: visible;
   background-color: black; }
 
 .coming-soon {
