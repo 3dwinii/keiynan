@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       let password = document.getElementById('password').value;
-      let correctPassword = 'H0ld1ngbackwav3s';
+      let correctPassword = 'MixTape';
 
       if (password === correctPassword) {
           content.style.visibility = "visible";
