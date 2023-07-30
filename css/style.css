@@ -91,9 +91,6 @@ body,
   .btn:active {
     border-color: #FF0000; }
 
-#content {
-  visibility: hidden; }
-
 #home {
   height: 100vh;
   width: 100vw;
@@ -138,7 +135,6 @@ body,
     visibility: visible; } }
 
 #coming-soon {
-  visibility: visible;
   background-color: black; }
 
 .coming-soon {
@@ -253,8 +249,8 @@ body,
   background-color: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
 
 .chevron {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border: solid #FF0000;
   border-width: 2px 2px 0 0; }
 
@@ -465,15 +461,18 @@ body,
   background-position: center;
   background-size: cover; }
   .carousel-links-container {
-    width: 70%;
+    width: 40%;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly; }
+  .carousel-links-player {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    display: flex;
-    justify-content: space-evenly; }
-  .carousel-links-text {
-    text-decoration: none; }
+    transform: translateY(-50%) translateX(-50%); }
 
 @media (max-width: 768px) {
   .carousel-links-container {
