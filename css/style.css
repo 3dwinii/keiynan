@@ -78,18 +78,21 @@ body,
 
 .btn {
   text-align: center;
-  border: 2px #FF0000 solid;
+  border: 2px #fff solid;
   border-radius: 20px;
   display: inline-block;
   padding: 10px 20px;
   margin: 1rem;
   font-size: 1rem;
   background-color: transparent;
-  color: #FF0000; }
+  color: #fff; }
   .btn::placeholder {
-    color: #FF0000; }
+    color: #fff; }
   .btn:active {
-    border-color: #FF0000; }
+    border-color: #fff; }
+
+#content {
+  visibility: hidden; }
 
 #home {
   height: 100vh;
@@ -135,6 +138,7 @@ body,
     visibility: visible; } }
 
 #coming-soon {
+  visibility: visible;
   background-color: black; }
 
 .coming-soon {
@@ -438,19 +442,17 @@ body,
   background-image: url("/imgs/mixtape-coming-soon.png");
   background-position: center;
   background-size: cover; }
-  .carousel-join-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); }
   .carousel-join-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    text-align: center; }
+    text-align: center;
+    background-color: transparent; }
   .carousel-join-subscribe {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #fff; }
 
 @media (max-width: 768px) {
   .carousel-join-btn {

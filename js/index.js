@@ -357,9 +357,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
-//////////////////////////////////////////////////////////////////
-////////////////////////// carousel b ///////////////////////////
-//////////////////////////////////////////////////////////////////
+////////////////////////// carousel two ///////////////////////////
 
 document.addEventListener("DOMContentLoaded", () => {
   let rightArrow = document.querySelector("#carousel-vinyl-carousel .carousel-vinyl-carousel-right-arrow");
@@ -535,6 +533,32 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   }
+  let autoSlideInterval = setInterval(() => {
+    startAnim("right");
+  }, 5000); // 5000 milliseconds = 5 seconds
+
+  // Add this function to stop the auto-slide on left/right arrow click or circle click
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Add this code to start the auto-slide again when necessary
+  rightArrow.addEventListener("click", () => {
+    startAnim("right");
+    stopAutoSlide();
+  });
+
+  leftArrow.addEventListener("click", () => {
+    startAnim("left");
+    stopAutoSlide();
+  });
+
+  circleStore.forEach(circle => {
+    circle.addEventListener("click", (e) => {
+      // Your existing code...
+      stopAutoSlide();
+    });
+  });
 })
 
 //////////////////////////////////////////////////////////////////
