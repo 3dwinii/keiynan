@@ -91,6 +91,9 @@ body,
   .btn:active {
     border-color: #fff; }
 
+#content {
+  visibility: hidden; }
+
 #home {
   height: 100vh;
   width: 100vw;
@@ -135,7 +138,6 @@ body,
     visibility: visible; } }
 
 #coming-soon {
-  visibility: hidden;
   background-color: black; }
 
 .coming-soon {
